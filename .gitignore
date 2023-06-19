@@ -1,8 +1,8 @@
 .gradle
 
-bin
 
-Reports
+
+
 
 Libs
 
@@ -16,3 +16,13 @@ build
 .project
 
 appium.log
+
+
+Reports/
+/bin/
+.project
+Libs/TempTestCase*
+Libs/TempTestSuite*
+bin/lib/TempTestCase*
+*.class
+*.swp
