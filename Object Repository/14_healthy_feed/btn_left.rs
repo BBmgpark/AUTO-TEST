@@ -3,7 +3,7 @@
    <description>건강피드 > 성장관리 > 키</description>
    <name>btn_left</name>
    <tag></tag>
-   <elementGuidId>d33aa887-ccb3-40e4-85bf-5ebaf612343a</elementGuidId>
+   <elementGuidId>7927a2ab-7aa7-4cb3-afed-c18cfe903e66</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/leftBtn</value>
-      <webElementGuid>4d23159b-700d-4436-965c-772018d23d59</webElementGuid>
+      <value>com.bbros.sayup.debug:id/leftBtn</value>
+      <webElementGuid>c5f29a20-b805-430c-b319-1d19f3f1aa20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>키</value>
-      <webElementGuid>570f76be-0881-4caa-a129-b9056d2081bb</webElementGuid>
+      <webElementGuid>3afeb864-97a1-4849-9e89-dbb74918196d</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/leftBtn' and (@text = '키' or . = '키')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/leftBtn' and (@text = '키' or . = '키')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

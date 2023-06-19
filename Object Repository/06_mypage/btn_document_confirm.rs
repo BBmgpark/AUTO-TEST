@@ -3,7 +3,7 @@
    <description>마이페이지 > [모바일 서류 받기] > [확인]</description>
    <name>btn_document_confirm</name>
    <tag></tag>
-   <elementGuidId>3e3fc612-8ddd-4c6b-a157-90b9ea72b932</elementGuidId>
+   <elementGuidId>70ee8b9c-4e3b-4cc4-9263-d7cf795d5be7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvDocumentIssueConfirm</value>
-      <webElementGuid>ca4df19b-2bd2-4ba2-af8c-e77fe9f95abd</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvDocumentIssueConfirm</value>
+      <webElementGuid>b6a0cb2e-7289-47c3-bf20-fc84d3cb2b26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>확인</value>
-      <webElementGuid>21469124-d44f-4f9c-ada8-b0fb7d6fdcf1</webElementGuid>
+      <webElementGuid>cbed98d3-ff31-45b1-befb-a4611c539911</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvDocumentIssueConfirm' and (@text = '확인' or . = '확인')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvDocumentIssueConfirm' and (@text = '확인' or . = '확인')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

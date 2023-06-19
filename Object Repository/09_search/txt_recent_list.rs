@@ -3,7 +3,7 @@
    <description>검색 > 최근 검색어 > 리스트(검색어)</description>
    <name>txt_recent_list</name>
    <tag></tag>
-   <elementGuidId>f25db362-657a-4bc4-a7b6-5383c427625b</elementGuidId>
+   <elementGuidId>ecb6a1b9-356a-4a20-b67b-af082ee0aade</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/recentSearchText</value>
-      <webElementGuid>2b0a2724-9f54-4ed1-8b46-a00c814b73e5</webElementGuid>
+      <value>com.bbros.sayup.debug:id/recentSearchText</value>
+      <webElementGuid>59d0ded8-832a-4157-8e41-1ec9b003c184</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/recentSearchText']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/recentSearchText']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

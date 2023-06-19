@@ -3,7 +3,7 @@
    <description>마이페이지 > 개인정보 수정 > 주소 영역</description>
    <name>txt_adress</name>
    <tag></tag>
-   <elementGuidId>9865bf0c-d276-4af1-ad2d-90f6ba307ac6</elementGuidId>
+   <elementGuidId>7e16b310-ea00-4ade-a470-1f93c54fbdf6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_description</value>
-      <webElementGuid>e9db5e69-6171-4869-b9af-1eb4ed7253a5</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_description</value>
+      <webElementGuid>a64783ca-2617-49de-a87e-a8dedeba33f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>aee81ead-f3ba-4a5b-80d3-bfc227d75d80</webElementGuid>
+      <webElementGuid>172d4d76-5fb5-4c20-8bec-07f2b1a6354d</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_description' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_description' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

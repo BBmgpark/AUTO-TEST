@@ -3,7 +3,7 @@
    <description>진료내역 > 상세 > [바로접수]</description>
    <name>btn_detail_now_receipt</name>
    <tag></tag>
-   <elementGuidId>cbc3a791-ef0f-47c1-b5ee-b83755d8e932</elementGuidId>
+   <elementGuidId>59dc54ff-ef44-41f3-9d40-aed24402d434</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>9a35ac14-dc60-48ea-bbfc-f1a07b68d95b</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>28be0216-76d2-41e2-b3da-ffb939a232d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>바로접수</value>
-      <webElementGuid>44523094-7669-4f8d-a99f-8bfb9e8d3475</webElementGuid>
+      <webElementGuid>39fa7120-b098-4b1a-8c32-3d2a66873b83</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '바로접수' or . = '바로접수')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '바로접수' or . = '바로접수')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

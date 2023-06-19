@@ -3,7 +3,7 @@
    <description>주소설정 > [삭제]</description>
    <name>btn_delete</name>
    <tag></tag>
-   <elementGuidId>d07251f0-8118-4fbf-8a15-55f2d588e755</elementGuidId>
+   <elementGuidId>c34c864d-aa64-4cee-8d24-f16489ac5119</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_edit</value>
-      <webElementGuid>689a8a38-b10d-48b6-8c54-5612b50ab73a</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_edit</value>
+      <webElementGuid>a8935f45-d9bb-45b3-93d2-130d61050e8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>삭제</value>
-      <webElementGuid>3975bc05-0158-4233-8e74-3273e0a92e49</webElementGuid>
+      <webElementGuid>0203e313-ab64-4ac7-a912-382dc23c18c0</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_edit' and (@text = '삭제' or . = '삭제')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_edit' and (@text = '삭제' or . = '삭제')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

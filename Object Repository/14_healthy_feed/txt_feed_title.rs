@@ -3,7 +3,7 @@
    <description>건강피드 > 피드 타이틀</description>
    <name>txt_feed_title</name>
    <tag></tag>
-   <elementGuidId>fdb57480-2bb0-429f-b41d-5199189290ad</elementGuidId>
+   <elementGuidId>f0c45842-bc20-43f9-a1fe-05b2a02beeef</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/feedTitle</value>
-      <webElementGuid>012c1618-40e0-49bc-8141-62d4f2fb1430</webElementGuid>
+      <value>com.bbros.sayup.debug:id/feedTitle</value>
+      <webElementGuid>99663991-6b16-48a6-91c6-34cc6cbe6b17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>9060b6ea-4e09-4353-b59e-15b99f64a550</webElementGuid>
+      <webElementGuid>ba87bb4f-b95a-42ac-87b2-7ed4276892cd</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/feedTitle' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/feedTitle' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -4,7 +4,7 @@
 titleTxt</description>
    <name>txt_titleTxt</name>
    <tag></tag>
-   <elementGuidId>649c1823-7ccc-46c8-9870-a01105f8bd23</elementGuidId>
+   <elementGuidId>d1eff0e3-71e1-4a65-888e-f2374509e23b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,9 +12,9 @@ titleTxt</description>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>c83d41bd-c9a7-4c98-80fa-e00fa0aebb3e</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>5f5b2056-713d-4ea6-aed4-7515cd50ed8f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>개인정보 유효기간 변경 > [완료] 팝업 > 타이틀</description>
    <name>txt_popup_title</name>
    <tag></tag>
-   <elementGuidId>82964b22-aad1-4eeb-aa81-4912d5e7b5ce</elementGuidId>
+   <elementGuidId>9048ebae-6362-4375-aaef-9ee5494a9d0e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>25255775-b009-46c3-8868-1931a176b90e</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>8e6b3e3a-1121-4702-9091-79dee0aeb070</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

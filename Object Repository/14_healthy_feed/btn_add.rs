@@ -3,7 +3,7 @@
    <description>건강피드 > [+]</description>
    <name>btn_add</name>
    <tag></tag>
-   <elementGuidId>f1d782ba-39ab-4179-8c2b-65c62fd18503</elementGuidId>
+   <elementGuidId>de3f8713-7c7d-4482-83aa-4c552945e1e4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/fab</value>
-      <webElementGuid>8f14676a-65e7-4e93-89eb-4c091e373137</webElementGuid>
+      <value>com.bbros.sayup.debug:id/fab</value>
+      <webElementGuid>888145c1-9bf1-4c80-a508-5c4dd8a4e1ec</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/fab']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/fab']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

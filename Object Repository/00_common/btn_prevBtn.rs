@@ -3,7 +3,7 @@
    <description>[이전]</description>
    <name>btn_prevBtn</name>
    <tag></tag>
-   <elementGuidId>c503008a-6b9d-412b-96f2-fcc1e81f002c</elementGuidId>
+   <elementGuidId>f66260bb-1ddf-41c4-b7d0-e7c082b3681c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/prevBtn</value>
-      <webElementGuid>1bf1beb6-db44-481f-9988-e921e2f50d3d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/prevBtn</value>
+      <webElementGuid>25e0618b-d78f-4546-8ac6-5104a5610ffe</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/prevBtn']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/prevBtn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

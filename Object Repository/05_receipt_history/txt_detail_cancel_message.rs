@@ -3,7 +3,7 @@
    <description>진료내역 상세 > 접수 취소 안내문구</description>
    <name>txt_detail_cancel_message</name>
    <tag></tag>
-   <elementGuidId>236f09a8-8aaa-4c53-abbc-230aea943c33</elementGuidId>
+   <elementGuidId>b0c8ab86-bef8-4a36-853c-c6b2626e7af6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvStateMessage</value>
-      <webElementGuid>e62c0ecb-0206-45a1-9671-9f66460826d3</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvStateMessage</value>
+      <webElementGuid>04bb9473-6581-41e6-ab63-1f3b9ce48ee7</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvStateMessage']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvStateMessage']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>확인 팝업 > 타이틀</description>
    <name>txt_messageTxt</name>
    <tag></tag>
-   <elementGuidId>8faab575-7941-4344-90bb-c14ba3746edc</elementGuidId>
+   <elementGuidId>c5c26808-6d3a-486c-8ef6-a774547ba6a5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/messageTxt</value>
-      <webElementGuid>59cdf275-a293-47ed-8b3a-9c46eeb26792</webElementGuid>
+      <value>com.bbros.sayup.debug:id/messageTxt</value>
+      <webElementGuid>110684ec-c094-44c8-8d8c-1c8f836ab685</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/messageTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/messageTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

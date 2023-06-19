@@ -3,7 +3,7 @@
    <description>검색 > 검색 결과 > sort > &quot;정렬 필터&quot;</description>
    <name>txt_sort_filter_title</name>
    <tag></tag>
-   <elementGuidId>752b237f-7d19-4ae5-b0df-f4e5e18cd552</elementGuidId>
+   <elementGuidId>9b480851-cfc4-477a-8754-906041d43378</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>eab68852-d5a5-4bf1-8eef-5290c013dead</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>4bd5122c-c81d-43e2-8afd-c8b50c067ea2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>정렬 필터</value>
-      <webElementGuid>cb3d4651-2afb-4a28-89be-7ce0c9acfe3a</webElementGuid>
+      <webElementGuid>ab3de089-1be1-4f8e-af94-d616a5e6b5da</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt' and (@text = '정렬 필터' or . = '정렬 필터')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt' and (@text = '정렬 필터' or . = '정렬 필터')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

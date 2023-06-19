@@ -3,7 +3,7 @@
    <description>팝업 공통 버튼</description>
    <name>btn_positiveTxt</name>
    <tag></tag>
-   <elementGuidId>32bafd2a-bf1f-49f6-8d70-07cb49c515f7</elementGuidId>
+   <elementGuidId>74701ed8-7dbd-4450-8508-a6690fcbef9b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/positiveTxt</value>
-      <webElementGuid>16c92706-9b55-40f2-b000-d97578dac37c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/positiveTxt</value>
+      <webElementGuid>9ddf5975-0560-458a-b6f8-c33a4f6d9a0d</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/positiveTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/positiveTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

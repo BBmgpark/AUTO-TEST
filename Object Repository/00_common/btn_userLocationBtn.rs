@@ -3,7 +3,7 @@
    <description>네이버 지도 > [현위치]</description>
    <name>btn_userLocationBtn</name>
    <tag></tag>
-   <elementGuidId>271cd856-34aa-4b85-baab-bc1ac5e063f0</elementGuidId>
+   <elementGuidId>db63e2ac-fd40-44b6-bb04-546adb3f3db5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/userLocationBtn</value>
-      <webElementGuid>d0d39b6b-0bf7-4f37-a533-64cf83b72be1</webElementGuid>
+      <value>com.bbros.sayup.debug:id/userLocationBtn</value>
+      <webElementGuid>39f57955-8c1e-452c-8bdf-03f5424f2a0f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/userLocationBtn']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/userLocationBtn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>똑닥 고객센터</description>
    <name>txt_service_center</name>
    <tag></tag>
-   <elementGuidId>5323e4ad-f229-4cda-be57-a4073015339c</elementGuidId>
+   <elementGuidId>5870af4a-52d4-4d90-a55e-9b5b557bb9e6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/ch_textGlobalNavigationTitle</value>
-      <webElementGuid>ebd1784b-19ed-47f7-9f06-1c5b36c46d5f</webElementGuid>
+      <value>com.bbros.sayup.debug:id/ch_textGlobalNavigationTitle</value>
+      <webElementGuid>c049e72a-0371-49b8-8934-5653264ba770</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>똑닥 고객센터 (유저)</value>
-      <webElementGuid>4cf63c02-c0cb-4db5-ac11-58bbf84c798e</webElementGuid>
+      <webElementGuid>539b0bfb-0a61-4d41-ad27-9fc4e2977c0c</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/ch_textGlobalNavigationTitle' and (@text = '똑닥 고객센터 (유저)' or . = '똑닥 고객센터 (유저)')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/ch_textGlobalNavigationTitle' and (@text = '똑닥 고객센터 (유저)' or . = '똑닥 고객센터 (유저)')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

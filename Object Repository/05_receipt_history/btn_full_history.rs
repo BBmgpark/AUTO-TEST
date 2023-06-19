@@ -3,7 +3,7 @@
    <description>진료내역 > [전체내역 보기]</description>
    <name>btn_full_history</name>
    <tag></tag>
-   <elementGuidId>3a0a426d-95b2-4021-a3c1-284266caba99</elementGuidId>
+   <elementGuidId>44ab7fd7-de66-493a-91f4-103f5c0ded49</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>f18af353-acb7-4115-a64a-ca6d19fc611f</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>dbb246d3-0716-4ddb-a5d8-841087e2a54d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>전체내역 보기</value>
-      <webElementGuid>ccaf1ac6-2279-437f-af57-4db647735421</webElementGuid>
+      <webElementGuid>27106a32-833e-4600-a908-528de2b80f4d</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '전체내역 보기' or . = '전체내역 보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '전체내역 보기' or . = '전체내역 보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

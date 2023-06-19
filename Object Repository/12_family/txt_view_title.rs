@@ -3,7 +3,7 @@
    <description>가족관리 > tv_title</description>
    <name>txt_view_title</name>
    <tag></tag>
-   <elementGuidId>d8c4277a-d457-454f-bdbd-d2d2f54c9a84</elementGuidId>
+   <elementGuidId>7bd1488a-2df8-422f-800b-761ff67e1885</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>e9431d2d-6608-44ed-95d4-e318f061f9c0</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>0623aea7-0751-499a-afd3-31f1915ad099</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

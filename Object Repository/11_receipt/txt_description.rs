@@ -3,7 +3,7 @@
    <description>접수 > 접수 설정 화면 > 설정 옵션</description>
    <name>txt_description</name>
    <tag></tag>
-   <elementGuidId>ac623b53-95a8-4a15-a517-a5dcd9f2acd5</elementGuidId>
+   <elementGuidId>7a7e7b3e-4c88-4af9-8145-c4f94b94a123</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/descriptionTxt</value>
-      <webElementGuid>0d465925-b012-4f50-b9da-d60873cf7b5b</webElementGuid>
+      <value>com.bbros.sayup.debug:id/descriptionTxt</value>
+      <webElementGuid>f61cf450-bfd9-49aa-9b39-645f9ceaf04b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>ae71bd1f-b20f-4efc-8c4f-5ba79f04059e</webElementGuid>
+      <webElementGuid>8b70100c-0baa-48d8-8c53-69d20d0454cd</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/descriptionTxt' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/descriptionTxt' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>로그인 > 이메일 로그인 > [로그인하기]</description>
    <name>btn_tvLoginConfirm</name>
    <tag></tag>
-   <elementGuidId>9a56c4f4-1451-4096-b44b-c354786c2df5</elementGuidId>
+   <elementGuidId>e2b213b4-e1a6-4b27-b2d2-070022911620</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvLoginConfirm</value>
-      <webElementGuid>354be3c0-fe9a-4275-a6fa-602ddeeb78ba</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvLoginConfirm</value>
+      <webElementGuid>7adafeea-f600-4d76-a51f-53ebc749cbfa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>로그인하기</value>
-      <webElementGuid>eb8c45f7-5d89-4f3c-8102-c27c636a47c4</webElementGuid>
+      <webElementGuid>da189599-5007-41ac-9f88-d68374b5b1d2</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvLoginConfirm' and (@text = '로그인하기' or . = '로그인하기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvLoginConfirm' and (@text = '로그인하기' or . = '로그인하기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

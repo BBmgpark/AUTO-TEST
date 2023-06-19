@@ -3,7 +3,7 @@
    <description>가족추가 > [완료]</description>
    <name>btn_add_complet</name>
    <tag></tag>
-   <elementGuidId>6be21f3b-9803-4c4a-a19c-62c6c08d002e</elementGuidId>
+   <elementGuidId>c595b093-2c6b-44ef-bade-87a8d75b7c94</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvCommonButtonView</value>
-      <webElementGuid>a43bf960-b34d-4b20-83aa-18cc90af00fb</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvCommonButtonView</value>
+      <webElementGuid>ffea7824-ee59-4768-9115-5d9e3536d2d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>완료</value>
-      <webElementGuid>b9249740-5f5f-43e7-bd0e-c9e833158f91</webElementGuid>
+      <webElementGuid>fbafe967-37aa-4e20-972f-9e4dd99b6e40</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvCommonButtonView' and (@text = '완료' or . = '완료')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvCommonButtonView' and (@text = '완료' or . = '완료')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

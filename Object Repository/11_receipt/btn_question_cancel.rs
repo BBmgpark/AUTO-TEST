@@ -3,7 +3,7 @@
    <description>사전문진 > [x] > [종료하기]</description>
    <name>btn_question_cancel</name>
    <tag></tag>
-   <elementGuidId>9fd86b52-0df2-4fe7-b873-dbabd68ee795</elementGuidId>
+   <elementGuidId>657a4ba0-3f81-4abf-aa46-c928c52ccd42</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/cancelBtn</value>
-      <webElementGuid>5d0d381c-15a6-4369-8d73-6664d26107da</webElementGuid>
+      <value>com.bbros.sayup.debug:id/cancelBtn</value>
+      <webElementGuid>713c1c00-d88e-4950-974b-7ef99e9ba7e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>종료하기</value>
-      <webElementGuid>7894bb36-4659-4020-adab-1792d4754338</webElementGuid>
+      <webElementGuid>05ec0934-9676-45ab-b86e-609a467f600a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/cancelBtn' and (@text = '종료하기' or . = '종료하기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/cancelBtn' and (@text = '종료하기' or . = '종료하기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

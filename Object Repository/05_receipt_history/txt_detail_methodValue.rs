@@ -3,7 +3,7 @@
    <description>진료내역 상세 > 결제정보</description>
    <name>txt_detail_methodValue</name>
    <tag></tag>
-   <elementGuidId>a196ef53-832d-4fad-aece-acbeff9bb531</elementGuidId>
+   <elementGuidId>b71b25d5-83bc-4898-929a-61b152b2f373</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/methodValue</value>
-      <webElementGuid>75c74f33-d9c7-424a-82ab-e321cc8a37bb</webElementGuid>
+      <value>com.bbros.sayup.debug:id/methodValue</value>
+      <webElementGuid>4257fb36-1d94-44ff-8f16-6b0416ebcac1</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/methodValue']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/methodValue']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

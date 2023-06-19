@@ -6,6 +6,7 @@
    <UUID>bfeceb4f-b232-4ad8-99bb-b4d8daa88982</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\git\AUTO-TEST\AUTO-TEST.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

@@ -3,7 +3,7 @@
    <description>[x] 버튼</description>
    <name>btn_close</name>
    <tag></tag>
-   <elementGuidId>43495745-60e4-46a8-a453-0032c18d81e4</elementGuidId>
+   <elementGuidId>b9bd0b47-f0a5-4d8a-bbb8-96bbcad652c0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/close</value>
-      <webElementGuid>abbf0412-964a-40ed-ac9d-9d7538e05728</webElementGuid>
+      <value>com.bbros.sayup.debug:id/close</value>
+      <webElementGuid>775b8b8d-341d-4280-9661-2f90367678e5</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/close']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/close']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

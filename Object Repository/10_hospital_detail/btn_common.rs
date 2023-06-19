@@ -4,7 +4,7 @@
 android.widget.Button</description>
    <name>btn_common</name>
    <tag></tag>
-   <elementGuidId>7dfa6b07-56d8-48d7-b3a1-637e7ebf83f3</elementGuidId>
+   <elementGuidId>490e2f4f-32a7-487d-885f-a71dcaea18ff</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -13,7 +13,7 @@ android.widget.Button</description>
       <name>class</name>
       <type>Main</type>
       <value>android.widget.Button</value>
-      <webElementGuid>6b54dabe-7524-4bf8-aa7d-193f2c2b3f05</webElementGuid>
+      <webElementGuid>d328d1c3-b03f-484b-aecb-5cf6cc549e96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -21,7 +21,7 @@ android.widget.Button</description>
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>679b59d0-f0a7-4fcd-92ac-e84f845bc5db</webElementGuid>
+      <webElementGuid>26803161-87e2-4203-891a-4870b683ac37</webElementGuid>
    </webElementProperties>
    <locator>//*[@class = 'android.widget.Button' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>

@@ -3,7 +3,7 @@
    <description>가족관리 > 자녀 생년월일 정보</description>
    <name>txt_birthday</name>
    <tag></tag>
-   <elementGuidId>a6e38544-d1db-41d2-9827-54e809a5d2a9</elementGuidId>
+   <elementGuidId>658033ac-8397-40b6-8106-9b32905c6ed0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_birthday</value>
-      <webElementGuid>402707f8-9aed-426e-9bd9-de1cab27333d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_birthday</value>
+      <webElementGuid>5f7e645d-c5e8-4417-bff8-925fc7691694</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>552e3ba9-cfb2-4bc8-b53c-5b8be5105462</webElementGuid>
+      <webElementGuid>384531e6-de56-47dc-ae29-bbe9b7bd87c1</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_birthday' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_birthday' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

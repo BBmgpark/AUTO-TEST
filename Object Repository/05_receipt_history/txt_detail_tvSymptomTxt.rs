@@ -3,7 +3,7 @@
    <description>진료내역 상세 > 진료항목</description>
    <name>txt_detail_tvSymptomTxt</name>
    <tag></tag>
-   <elementGuidId>d86b4d13-87ae-406e-9aeb-35b58c643049</elementGuidId>
+   <elementGuidId>1647091f-8f1b-491d-9170-888bd0e48ad7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvSymptomTxt</value>
-      <webElementGuid>472ee404-dbb8-4a5f-a75b-b288e0784db6</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvSymptomTxt</value>
+      <webElementGuid>d6f21040-f2be-4b9b-abc4-ee6af5193b99</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvSymptomTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvSymptomTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -4,7 +4,7 @@
 [{버튼문구}]</description>
    <name>btn_confirmBtn</name>
    <tag></tag>
-   <elementGuidId>0c1ad674-0f6f-493c-a53c-469ff2008904</elementGuidId>
+   <elementGuidId>24150e80-6c6f-4503-8844-9ded48af4f34</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,9 +12,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/confirmBtn</value>
-      <webElementGuid>e1d65ac2-29d0-483a-bb6a-75660f3a047a</webElementGuid>
+      <value>com.bbros.sayup.debug:id/confirmBtn</value>
+      <webElementGuid>c599272a-94f2-428e-8b3c-ea47c7fddfdb</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/confirmBtn']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/confirmBtn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

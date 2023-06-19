@@ -3,7 +3,7 @@
    <description>검색 > 질병 검색 > 질병 정보 > 안내문구</description>
    <name>txt_disease_description</name>
    <tag></tag>
-   <elementGuidId>59613b20-1bce-413c-8486-ecc2c0e1e9b8</elementGuidId>
+   <elementGuidId>6ad6d193-0c59-4d8e-b09a-a64cce3ed7ed</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/diseaseDescription</value>
-      <webElementGuid>ded46407-67da-4509-8996-e9dfaf90ee21</webElementGuid>
+      <value>com.bbros.sayup.debug:id/diseaseDescription</value>
+      <webElementGuid>a7487973-4c4b-429f-902f-07ac11f77a9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>어려운 질병정보 상세보기</value>
-      <webElementGuid>8841dd97-d44f-4cac-903a-f0ee3730dfc7</webElementGuid>
+      <webElementGuid>2d01b906-a2db-4c5f-95af-d41485af6ef7</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/diseaseDescription' and (@text = '어려운 질병정보 상세보기' or . = '어려운 질병정보 상세보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/diseaseDescription' and (@text = '어려운 질병정보 상세보기' or . = '어려운 질병정보 상세보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

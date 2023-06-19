@@ -3,7 +3,7 @@
    <description>검색 > [진료과목]</description>
    <name>btn_medical_department</name>
    <tag></tag>
-   <elementGuidId>35e95bb0-b0b1-4e00-8b8c-b26438c12ea6</elementGuidId>
+   <elementGuidId>93a260ee-33c6-4817-8bc4-5d5c5ab1924d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView</value>
-      <webElementGuid>67054067-7e91-4347-a394-2ef6d9f692f5</webElementGuid>
+      <webElementGuid>6ff5e880-00e0-4ac1-b999-2d2992548522</webElementGuid>
    </webElementProperties>
    <locator>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView</locator>
    <locatorStrategy>XPATH</locatorStrategy>

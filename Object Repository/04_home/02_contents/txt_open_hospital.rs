@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 지금 문연 병원 (텍스트 더블리스트형)</description>
    <name>txt_open_hospital</name>
    <tag></tag>
-   <elementGuidId>c60dacc5-4e65-4aab-8ac6-2aef1cd1ae16</elementGuidId>
+   <elementGuidId>0060d3d8-40fa-4d9a-a94d-bc68afc39082</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>9ce6971b-ea86-4561-a557-3f4eabd9b80c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>019dac29-1c28-4e6c-8a36-501d91c47914</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>지금 문연 병원</value>
-      <webElementGuid>57a036bf-ca34-45e7-bd5e-620248d5f642</webElementGuid>
+      <webElementGuid>8c25b068-45b5-4c41-8af6-d20e1a824f06</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '지금 문연 병원' or . = '지금 문연 병원')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title' and (@text = '지금 문연 병원' or . = '지금 문연 병원')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

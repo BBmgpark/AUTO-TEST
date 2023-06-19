@@ -3,7 +3,7 @@
    <description>예약 > 날짜선택 > 예약(시/분)</description>
    <name>txt_reservation_minute</name>
    <tag></tag>
-   <elementGuidId>b5a8c7d3-acf5-44b8-a069-7bbabb3cfcd9</elementGuidId>
+   <elementGuidId>9217f88c-4777-443c-a667-82414d855155</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_minute</value>
-      <webElementGuid>06b2bc50-f511-4d96-bed0-cd9056b3a4b8</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_minute</value>
+      <webElementGuid>39e7cbeb-7580-4b67-850f-e23e849cb859</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_minute']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_minute']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>접수 > 접수하기 > 타이틀</description>
    <name>txt_receipt_title</name>
    <tag></tag>
-   <elementGuidId>03a8e1db-9f24-4229-8df4-ce552ddcfc91</elementGuidId>
+   <elementGuidId>8b09e291-7861-481f-a0ce-727e8cad0af1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>8d2550ba-b176-4188-8451-bb6f15f1ff5c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>813b7cd1-8c36-4eb1-be0e-5d2ce18f3d7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>접수하기</value>
-      <webElementGuid>cef1b625-9654-466e-9555-2fef3a85e0db</webElementGuid>
+      <webElementGuid>f3f83f8b-81a4-4efe-9ec0-99f33dafb326</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt' and (contains(@text, '접수하기') or contains(., '접수하기'))]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt' and (contains(@text, '접수하기') or contains(., '접수하기'))]</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

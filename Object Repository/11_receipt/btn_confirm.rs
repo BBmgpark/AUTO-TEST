@@ -3,7 +3,7 @@
    <description>접수 > 접수하기 > [x] > [네]</description>
    <name>btn_confirm</name>
    <tag></tag>
-   <elementGuidId>2ec1d793-9dd6-40d7-bee1-460be5a4b85b</elementGuidId>
+   <elementGuidId>88739e48-fb60-4c24-b3e7-94b69df4f7de</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/positiveTxt</value>
-      <webElementGuid>02ed418e-7db4-4128-865d-c55f5affbfd1</webElementGuid>
+      <value>com.bbros.sayup.debug:id/positiveTxt</value>
+      <webElementGuid>891a4e96-3707-42b9-8deb-506b33b3d183</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/positiveTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/positiveTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

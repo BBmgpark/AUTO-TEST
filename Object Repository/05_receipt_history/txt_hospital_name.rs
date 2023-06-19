@@ -3,7 +3,7 @@
    <description>진료내역 > 병원명</description>
    <name>txt_hospital_name</name>
    <tag></tag>
-   <elementGuidId>f3535452-37a7-4e67-a4ca-4dcb16f65e05</elementGuidId>
+   <elementGuidId>d413617f-cb7e-423b-ad35-6f572b8e5afb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvHospitalTitle</value>
-      <webElementGuid>dee93aab-46c9-4472-854f-35bb934da10f</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvHospitalTitle</value>
+      <webElementGuid>a0845d60-3ff4-404a-8872-18eea4f993ff</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvHospitalTitle']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvHospitalTitle']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

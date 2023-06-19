@@ -3,7 +3,7 @@
    <description>검색 > 바텀시트 > [더보기]</description>
    <name>btn_bottom_seat_more</name>
    <tag></tag>
-   <elementGuidId>6ac394c2-041c-478c-aaf6-65c97924a232</elementGuidId>
+   <elementGuidId>28d1f72a-aef5-475a-a39e-430efc23b6fd</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_more_text</value>
-      <webElementGuid>b69b636b-48fb-4694-ad19-c7a5b72c1231</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_more_text</value>
+      <webElementGuid>f4c20aa7-558b-4444-a300-6f0c2f005b3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>더보기</value>
-      <webElementGuid>30eb7736-9919-4e39-9efe-ad742e789359</webElementGuid>
+      <webElementGuid>14aa556e-85e5-4e5d-bd06-6f9760d66c2d</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_more_text' and (@text = '더보기' or . = '더보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_more_text' and (@text = '더보기' or . = '더보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

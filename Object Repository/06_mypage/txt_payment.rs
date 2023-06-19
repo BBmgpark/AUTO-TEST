@@ -3,7 +3,7 @@
    <description>마이페이지 > 결제수단 관리</description>
    <name>txt_payment</name>
    <tag></tag>
-   <elementGuidId>32d65b15-a8b3-45bb-9986-02cf29f68818</elementGuidId>
+   <elementGuidId>bd5c7826-8800-4d2e-99d9-7990f7e8820b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvPaymentTitle</value>
-      <webElementGuid>2462c391-98fa-4655-a05e-9049d3df2a28</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvPaymentTitle</value>
+      <webElementGuid>06794bef-cac4-43d0-b358-2f257caeee00</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>결제수단 관리</value>
-      <webElementGuid>9650cc63-852e-4924-b7f2-9ad6325caf52</webElementGuid>
+      <webElementGuid>288a34d2-5306-4727-a714-47d018dd859a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvPaymentTitle' and (@text = '결제수단 관리' or . = '결제수단 관리')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvPaymentTitle' and (@text = '결제수단 관리' or . = '결제수단 관리')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

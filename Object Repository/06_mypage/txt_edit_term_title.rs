@@ -3,7 +3,7 @@
    <description>마이페이지 > 개인정보 수정 > 개인정보 유효기간 변경 > 타이틀</description>
    <name>txt_edit_term_title</name>
    <tag></tag>
-   <elementGuidId>fb6b1e4f-9e16-4d72-96fb-59e3e7286ded</elementGuidId>
+   <elementGuidId>6d6d63c7-cf17-439a-8efc-6ff7a1b8f519</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>a41d7d91-783c-42c5-af46-991bd51c54d8</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>9efec385-4358-433a-88f1-b4b0246754d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -21,9 +21,9 @@
       <type>Main</type>
       <value>개인정보
 유효기간 변경</value>
-      <webElementGuid>998b5102-cc60-4770-bef8-70148ebf7939</webElementGuid>
+      <webElementGuid>67bc4ca6-5281-40a2-ac97-0afdd4eebb9f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt' and (@text = '개인정보
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt' and (@text = '개인정보
 유효기간 변경' or . = '개인정보
 유효기간 변경')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>

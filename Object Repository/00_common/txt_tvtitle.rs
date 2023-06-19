@@ -3,7 +3,7 @@
    <description>com.bbros.sayup:id/tvTitle</description>
    <name>txt_tvTitle</name>
    <tag></tag>
-   <elementGuidId>0b781cfb-1662-4a2e-9731-a2a0bb0c70bc</elementGuidId>
+   <elementGuidId>24ceb800-c88e-4e9c-abc5-f5d997f9fde4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvTitle</value>
-      <webElementGuid>7e68f576-d06c-4720-9cd0-62325959801d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvTitle</value>
+      <webElementGuid>564a7252-9bfb-4bf4-99e3-57bcd9ccd404</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>eb2c4657-0037-45bb-9aa7-0759af5fa854</webElementGuid>
+      <webElementGuid>194bd80e-516b-4c54-92a5-0988af170b8e</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvTitle' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvTitle' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

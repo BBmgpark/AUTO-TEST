@@ -3,7 +3,7 @@
    <description>건강피드 > 성장관리 > 키/몸무게 &quot;00cm (N백분위)&quot;</description>
    <name>txt_height_weight</name>
    <tag></tag>
-   <elementGuidId>29125bd6-354f-499b-8281-e05610afc97c</elementGuidId>
+   <elementGuidId>14e6aece-1497-45cf-96a6-140336f106a0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/heightAndWeightText</value>
-      <webElementGuid>9e8a242a-baf9-401f-b685-5322fffea787</webElementGuid>
+      <value>com.bbros.sayup.debug:id/heightAndWeightText</value>
+      <webElementGuid>11719bf0-f1c4-4d71-8304-f411a50041b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>22f6968c-7ff9-4cda-9e0f-01a9cf756cba</webElementGuid>
+      <webElementGuid>b7e43ca2-03ca-4268-92a9-a6f657a17bd2</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/heightAndWeightText' and (contains(@text, '${text}') or contains(., '${text}'))]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/heightAndWeightText' and (contains(@text, '${text}') or contains(., '${text}'))]</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

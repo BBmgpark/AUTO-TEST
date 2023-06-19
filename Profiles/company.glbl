@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>앱ID</description>
-      <initValue>'com.bbros.sayup'</initValue>
+      <initValue>'com.bbros.sayup.debug'</initValue>
       <name>appid</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>고정된 시간</description>
-      <initValue>3</initValue>
+      <initValue>5</initValue>
       <name>fixedTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -71,7 +71,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>병원명</description>
-      <initValue>'[TEST] 똑닥가정의학과의원'</initValue>
+      <initValue>'[TEST] 배곧의원'</initValue>
       <name>hospital_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

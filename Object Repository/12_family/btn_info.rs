@@ -3,7 +3,7 @@
    <description>가족관리 > 자녀정보 > [정보보기]</description>
    <name>btn_info</name>
    <tag></tag>
-   <elementGuidId>8f59ed90-cf15-4ced-9825-f401cbeddab9</elementGuidId>
+   <elementGuidId>200c55d1-2b66-4987-b927-e247c46b1e4a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_blur_show</value>
-      <webElementGuid>48663be2-9183-478b-9f9a-5e9e3d5948c5</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_blur_show</value>
+      <webElementGuid>0eb30b61-b7cd-4dee-a8cd-d9410a79bf5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>정보보기</value>
-      <webElementGuid>898ebc5c-9d3c-4a5d-8d05-7b2f94a13607</webElementGuid>
+      <webElementGuid>2dbdfa39-f0a1-4ced-a695-599787e71759</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_blur_show' and (@text = '정보보기' or . = '정보보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_blur_show' and (@text = '정보보기' or . = '정보보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

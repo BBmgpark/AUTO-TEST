@@ -3,7 +3,7 @@
    <description>진료내역 > 상세 > [접수 취소]</description>
    <name>btn_detail_receipt_cancel</name>
    <tag></tag>
-   <elementGuidId>05a4ed0d-5c72-4a92-ad57-db683a762349</elementGuidId>
+   <elementGuidId>530f8fad-db9d-472a-82cb-b5c9d212d58b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>746128e7-2501-4efc-8daa-4cbeb79c0e3f</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>95b4f867-9cd4-47cc-b09d-17f0999cd226</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>접수취소</value>
-      <webElementGuid>10d6ceb5-d665-4ea8-8459-2c40730034a0</webElementGuid>
+      <webElementGuid>d1e1353a-cbe2-4a86-a1c6-c714979e62b0</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '접수취소' or . = '접수취소')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '접수취소' or . = '접수취소')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

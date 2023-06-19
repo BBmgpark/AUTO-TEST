@@ -3,7 +3,7 @@
    <description>검색 > 병원 목록 선택 > [지도보기] > 바텀시트</description>
    <name>area_hospital_map_list</name>
    <tag></tag>
-   <elementGuidId>b950e087-d251-4348-a52b-5a89bf2386fb</elementGuidId>
+   <elementGuidId>dbce20c8-8530-4866-a249-7ca48779424e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/mapListItemView</value>
-      <webElementGuid>b8676300-22b1-4a50-b171-5991c1f45216</webElementGuid>
+      <value>com.bbros.sayup.debug:id/mapListItemView</value>
+      <webElementGuid>6b91d575-6ccb-4804-b142-a7d57f18b450</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/mapListItemView']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/mapListItemView']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

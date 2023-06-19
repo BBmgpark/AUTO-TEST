@@ -3,7 +3,7 @@
    <description>주소설정 > [편집]</description>
    <name>btn_edit</name>
    <tag></tag>
-   <elementGuidId>b110769d-124f-4893-b65e-1fae328e1e1d</elementGuidId>
+   <elementGuidId>bc8c2fba-2958-41f1-8f19-6b2790babbc5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvOption</value>
-      <webElementGuid>3328a54d-4e0b-4164-9455-1fcbb0e2b3ce</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvOption</value>
+      <webElementGuid>da94cc5b-d87e-4b8c-aa42-cb0bd2eee1b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>편집</value>
-      <webElementGuid>4d5dc7a1-ee1d-48be-938a-875a27e2c449</webElementGuid>
+      <webElementGuid>172c0de5-7a6c-41ca-9495-bb405a6c860f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvOption' and (@text = '편집' or . = '편집')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvOption' and (@text = '편집' or . = '편집')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 동네 인기 병원 (텍스트 더블리스트형)</description>
    <name>txt_local_hospital</name>
    <tag></tag>
-   <elementGuidId>b3477d42-9768-4f8b-8a6e-c0b8ffa379cb</elementGuidId>
+   <elementGuidId>86f903e2-4793-43b6-b590-65361d80a097</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>7af5e203-33de-444b-8282-3527f05549f6</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>30a3252a-7703-410b-9e3e-b5e5e3e1a9ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>동네 인기 병원</value>
-      <webElementGuid>5098e38b-ee5a-4f64-b8c1-6551c9beac02</webElementGuid>
+      <webElementGuid>e5d5a3a5-ad61-4af6-bb5c-d08118ac4b98</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '동네 인기 병원' or . = '동네 인기 병원')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title' and (@text = '동네 인기 병원' or . = '동네 인기 병원')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -93,14 +93,14 @@ Mobile.tap(findTestObject('04_home/btn_frame_favorite'), GlobalVariable.fixedTim
 
 '기대결과 - 찜한 목록 화면으로 이동, 즐겨찾기한 병원 목록 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementVisible(findTestObject('08_favorits/txt_hospital_name', [('text') : '[TEST] 똑닥가정의학과의원']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명
+Mobile.verifyElementVisible(findTestObject('08_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명
 }
 //
 else
 {
 //즐겨찾기 해제
 'STEP - 찜한목록 리스트 선택'
-Mobile.tap(findTestObject('08_favorits/txt_hospital_name', [('text') : '[TEST] 똑닥가정의학과의원']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('08_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 'STEP - [☆]  즐겨찾기 버튼 선택'
 Mobile.tap(findTestObject('10_hospital_detail/btn_favorits'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -116,7 +116,7 @@ Mobile.tap(findTestObject('04_home/btn_frame_favorite'), GlobalVariable.fixedTim
 
 '기대결과 - 찜한 목록 화면으로 이동, 즐겨찾기한 병원 목록 미노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementNotVisible(findTestObject('08_favorits/txt_hospital_name', [('text') : '[TEST] 똑닥가정의학과의원']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명1
+Mobile.verifyElementNotVisible(findTestObject('08_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명1
 //
 }
 

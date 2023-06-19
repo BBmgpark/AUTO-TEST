@@ -3,7 +3,7 @@
    <description>마이페이지 > 개인정보 수정 > 비밀번호 재설정</description>
    <name>txt_password</name>
    <tag></tag>
-   <elementGuidId>fa268876-8846-4a8e-9f69-d0b8a3582c94</elementGuidId>
+   <elementGuidId>3dacbb9d-b681-448a-9e5f-04509df535b4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>f88636ce-e600-4101-9529-b2dfb199aa63</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>a92d4a10-727f-4913-8fde-ee21266b5e0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>비밀번호 재설정</value>
-      <webElementGuid>52b171d8-c2fa-4855-ae63-3109fbf01981</webElementGuid>
+      <webElementGuid>3bb170fb-bb02-4168-a085-4c9eacc6c8b9</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '비밀번호 재설정' or . = '비밀번호 재설정')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title' and (@text = '비밀번호 재설정' or . = '비밀번호 재설정')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

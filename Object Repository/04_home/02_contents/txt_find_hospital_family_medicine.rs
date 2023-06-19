@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 진료과로 병원 찾기 > 가정의학과</description>
    <name>txt_find_hospital_family_medicine</name>
    <tag></tag>
-   <elementGuidId>79ace809-6b9f-423c-9170-eadbb49616fc</elementGuidId>
+   <elementGuidId>a9c0b73c-448f-4012-b6b7-85287c93d71b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>b00949db-3bcb-4000-a131-3b8b2549adc9</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>ede50377-7039-44ba-8742-b56a1ee54126</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>가정의학과</value>
-      <webElementGuid>d4951d2d-916e-4f9a-806f-620d0daaed34</webElementGuid>
+      <webElementGuid>450cf734-b6b2-41a2-942e-240c3dba4cb3</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '가정의학과' or . = '가정의학과')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title' and (@text = '가정의학과' or . = '가정의학과')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

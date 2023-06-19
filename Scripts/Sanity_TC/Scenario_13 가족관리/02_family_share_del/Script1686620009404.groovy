@@ -161,7 +161,7 @@ Mobile.tap(findTestObject('06_mypage/btn_login'), GlobalVariable.fixedTime, Fail
 Mobile.tap(findTestObject('02_onboarding/btn_tvEmailLoginBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 이메일 id 입력'
-Mobile.setText(findTestObject('03_login/input_etEmail'), GlobalVariable.email_id_22, GlobalVariable.fixedTime)
+Mobile.setText(findTestObject('03_login/input_etEmail'), GlobalVariable.email_id, GlobalVariable.fixedTime)
 
 'STEP - 이메일 password 입력'
 Mobile.setText(findTestObject('03_login/input_etPassword'), GlobalVariable.email_password, GlobalVariable.fixedTime)

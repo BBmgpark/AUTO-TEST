@@ -31,13 +31,13 @@ Mobile.tap(findTestObject('00_common_data_delete/txt_textview', [('text') : '애
 Mobile.delay(1)
 
 '검색'
-Mobile.tap(findTestObject('00_common_data_delete/btn_search'), 2)
+Mobile.tap(findTestObject('00_common_data_delete/btn_search'), 10)
 
 '똑닥 검색'
-Mobile.setText(findTestObject('00_common_data_delete/input_search'), '똑닥', 2)
+Mobile.setText(findTestObject('00_common_data_delete/input_search'), '똑닥 테스트', 2)
 
 '똑닥 선택'
-Mobile.tap(findTestObject('00_common_data_delete/txt_title', [('text') : '똑닥']), 2)
+Mobile.tap(findTestObject('00_common_data_delete/txt_title', [('text') : '똑닥 테스트']), 2)
 
 '저장공간'
 Mobile.tap(findTestObject('00_common_data_delete/txt_title', [('text') : '저장공간']), 2)

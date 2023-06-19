@@ -3,7 +3,7 @@
    <description>주소설정 > 추가 > 상세주소 입력 -> 상세주소</description>
    <name>input_adress_detail_adress_detail</name>
    <tag></tag>
-   <elementGuidId>1e88b46f-170e-4c78-8ddf-0009f4898f71</elementGuidId>
+   <elementGuidId>303b39b4-6c4e-4ce2-8b3b-a27bbe59e3af</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/et_address_detail</value>
-      <webElementGuid>fe2d7bd7-b228-4031-bc2f-03e00dfdff4c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/et_address_detail</value>
+      <webElementGuid>c56c45ed-28b2-4115-ab17-b63984f00958</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/et_address_detail']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/et_address_detail']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

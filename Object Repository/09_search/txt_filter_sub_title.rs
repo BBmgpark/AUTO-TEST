@@ -3,7 +3,7 @@
    <description>검색 > 필터 화면 > 서브 타이틀</description>
    <name>txt_filter_sub_title</name>
    <tag></tag>
-   <elementGuidId>72f11f4f-52c3-41b7-ae7f-337ae511d4a9</elementGuidId>
+   <elementGuidId>ffaa55e2-537f-4a7a-96aa-9fc2f3c5fc16</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/subTitleTxt</value>
-      <webElementGuid>231b786f-ded7-4cab-99db-4091775c84f8</webElementGuid>
+      <value>com.bbros.sayup.debug:id/subTitleTxt</value>
+      <webElementGuid>548b645c-5643-4736-ac27-de2bdb4cccb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>11eae27d-eeba-46ab-a18c-acb818674ed4</webElementGuid>
+      <webElementGuid>e8feb343-c7b1-41dd-b9d4-dcf5a6ced2d4</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/subTitleTxt' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/subTitleTxt' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

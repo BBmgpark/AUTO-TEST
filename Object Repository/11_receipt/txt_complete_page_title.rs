@@ -3,7 +3,7 @@
    <description>접수/예약 완료 화면 > 타이틀</description>
    <name>txt_complete_page_title</name>
    <tag></tag>
-   <elementGuidId>c75c3af1-5520-47b7-998f-e54e54ea4d62</elementGuidId>
+   <elementGuidId>77d9ce04-e1d8-4dca-980b-cc2ad0d8d6e1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvTitle</value>
-      <webElementGuid>c6d409e1-8061-4a45-894d-f84a880df2b3</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvTitle</value>
+      <webElementGuid>9ae1c175-e4b1-49ea-9766-72cf92dc74d5</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvTitle']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvTitle']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>검색 > 검색 결과 > [+] 아이콘</description>
    <name>btn_result_plus</name>
    <tag></tag>
-   <elementGuidId>5efa0364-421b-47ea-b33f-7af491c41b64</elementGuidId>
+   <elementGuidId>48fb1132-2d8a-4282-8385-75d937e3b89c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/icon</value>
-      <webElementGuid>111aadeb-7163-4dac-8949-c04e52081484</webElementGuid>
+      <value>com.bbros.sayup.debug:id/icon</value>
+      <webElementGuid>47140724-29f7-4c2d-8dd6-a5156bb3e84b</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/icon']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/icon']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>진료내역 > 취소 사유</description>
    <name>txt__deny_reason</name>
    <tag></tag>
-   <elementGuidId>eaab14f4-3f5d-456e-b33a-64656c5a1975</elementGuidId>
+   <elementGuidId>6826c73c-acfb-4f22-b980-03e8f77d1f63</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvDenyReason</value>
-      <webElementGuid>fe852783-be83-417b-b7e6-5d96cd331eb5</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvDenyReason</value>
+      <webElementGuid>c5488ed7-697f-48ec-9f92-d9d746330cff</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvDenyReason']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvDenyReason']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>예약 > [날짜/시간 선택]</description>
    <name>btn_date_time_select</name>
    <tag></tag>
-   <elementGuidId>4e6b522e-aced-4ea2-a3ef-87e04d019573</elementGuidId>
+   <elementGuidId>4956b5a6-a99f-4c7f-a616-98612e1ab545</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/receiptBtn</value>
-      <webElementGuid>9959d73f-cd25-4324-9b75-d04c36914892</webElementGuid>
+      <value>com.bbros.sayup.debug:id/receiptBtn</value>
+      <webElementGuid>0a65f450-d59b-4589-b41c-f9cadfadd88e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>날짜/시간 선택</value>
-      <webElementGuid>92b99257-8e9a-4615-bace-b4de995b7bb0</webElementGuid>
+      <webElementGuid>5a09f193-e887-4bd9-9196-1ce326f41c7a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/receiptBtn' and (@text = '날짜/시간 선택' or . = '날짜/시간 선택')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/receiptBtn' and (@text = '날짜/시간 선택' or . = '날짜/시간 선택')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

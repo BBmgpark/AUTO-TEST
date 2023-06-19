@@ -3,7 +3,7 @@
    <description>사전문진 > [x]</description>
    <name>btn_question_close</name>
    <tag></tag>
-   <elementGuidId>e43dbc2f-6fa0-4547-8f67-c219badf096d</elementGuidId>
+   <elementGuidId>8283a46a-8316-4bf0-b84f-9340af11f298</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/closeBtn</value>
-      <webElementGuid>e063670e-c650-485d-805a-35159444d154</webElementGuid>
+      <value>com.bbros.sayup.debug:id/closeBtn</value>
+      <webElementGuid>99430bde-955f-432e-9e61-dc663aaa2cf4</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/closeBtn']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/closeBtn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

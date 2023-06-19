@@ -4,7 +4,7 @@
 등록or완료</description>
    <name>btn_tvCommonButtonView</name>
    <tag></tag>
-   <elementGuidId>0acf36a3-9919-41e1-a344-e246f142e141</elementGuidId>
+   <elementGuidId>0270d648-dd36-42e6-81fc-3a7b4640da7e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,9 +12,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvCommonButtonView</value>
-      <webElementGuid>3861e437-afb1-4f5f-b3b9-9d9513a4fc68</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvCommonButtonView</value>
+      <webElementGuid>484fc0da-de72-4f3e-ad11-d46f4417530b</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvCommonButtonView']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvCommonButtonView']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

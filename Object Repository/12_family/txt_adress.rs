@@ -3,7 +3,7 @@
    <description>가족관리 > 자녀 정보 > 주소</description>
    <name>txt_adress</name>
    <tag></tag>
-   <elementGuidId>5cf8d79a-ab5f-44af-a029-10562e138a87</elementGuidId>
+   <elementGuidId>a844e19a-ad32-4cdb-a992-60e2142f0b4f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_address</value>
-      <webElementGuid>296ba3c8-eeaa-485d-a966-b4c0ae708b9e</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_address</value>
+      <webElementGuid>77558ec7-0311-49d0-b4e3-a499902b4c79</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_address']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_address']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

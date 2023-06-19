@@ -3,7 +3,7 @@
    <description>팝업 > [확인]</description>
    <name>btn_positive</name>
    <tag></tag>
-   <elementGuidId>bbdd67ed-beea-458b-a6df-f9434509d8de</elementGuidId>
+   <elementGuidId>e5fe4dbf-cbf6-4329-8eed-625781c0685c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/positiveBtn</value>
-      <webElementGuid>7690a222-423e-4e10-b1c2-7b60ae064c8c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/positiveBtn</value>
+      <webElementGuid>a9717f24-0cf8-4a95-8df7-5a246b44f6a6</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/positiveBtn']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/positiveBtn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

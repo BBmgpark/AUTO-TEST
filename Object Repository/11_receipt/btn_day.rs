@@ -3,7 +3,7 @@
    <description>예약 > 날짜선택 > day</description>
    <name>btn_day</name>
    <tag></tag>
-   <elementGuidId>df6437ed-09f5-48c5-bb22-f524410f297b</elementGuidId>
+   <elementGuidId>3868e474-fea1-448e-a4d0-f56a3d72c108</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/dayTxt</value>
-      <webElementGuid>f5296ceb-0c1d-471b-b996-b2b6bd4a213c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/dayTxt</value>
+      <webElementGuid>839bbea9-8e2c-446c-a321-9aed92388b63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>ba480e0e-bd65-4d51-af0b-e6782e8c2bda</webElementGuid>
+      <webElementGuid>a0ad31db-b08e-4aa1-ae05-3fdfb4244678</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/dayTxt' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/dayTxt' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

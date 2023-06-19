@@ -3,7 +3,7 @@
    <description>마이페이지 > [로그인]</description>
    <name>btn_login</name>
    <tag></tag>
-   <elementGuidId>89bbb2c7-95c0-4cf5-9372-aa48c24c69dc</elementGuidId>
+   <elementGuidId>29dcf7c2-dcc9-42b6-bac1-340c991f62cd</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>63640d30-19cf-4cc3-abef-a50f84c7386f</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>3db99735-08da-4124-8199-f7755d22c00e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>로그인</value>
-      <webElementGuid>94dd3b5f-8396-40f8-9f52-3fa846671597</webElementGuid>
+      <webElementGuid>5ea46366-89e0-43ee-a320-bc4f07748e64</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '로그인' or . = '로그인')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '로그인' or . = '로그인')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

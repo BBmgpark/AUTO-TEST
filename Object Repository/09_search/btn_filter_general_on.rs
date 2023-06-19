@@ -3,7 +3,7 @@
    <description>검색 > 필터 > [일반병실] > on</description>
    <name>btn_filter_general_on</name>
    <tag></tag>
-   <elementGuidId>37371c5c-7352-4450-bd62-0265ea1b20e0</elementGuidId>
+   <elementGuidId>6dceb026-fffe-4d43-a035-ef793cda3e1a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/button</value>
-      <webElementGuid>77c3e882-410e-442f-833c-9806ad97c15d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/button</value>
+      <webElementGuid>16231264-b8dd-40cd-9adc-1d2b327001ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>text</name>
       <type>Main</type>
       <value>일반병실</value>
-      <webElementGuid>1aed9cca-1d15-4d83-b367-2359636cd39f</webElementGuid>
+      <webElementGuid>6cd82dc8-ddb1-4b50-bc32-0bec67fb069b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,8 +28,8 @@
       <name>selected</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>4ce4406d-8e6f-451d-803a-e863b019280c</webElementGuid>
+      <webElementGuid>e65b4753-514d-4ee2-abbe-6c9370a85177</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/button' and (@text = '일반병실' or . = '일반병실') and @selected = 'true']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/button' and (@text = '일반병실' or . = '일반병실') and @selected = 'true']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

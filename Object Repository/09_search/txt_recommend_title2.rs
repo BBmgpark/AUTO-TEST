@@ -3,7 +3,7 @@
    <description>검색 > 추천 검색어 > &quot;검색어&quot;</description>
    <name>txt_recommend_title2</name>
    <tag></tag>
-   <elementGuidId>79bbda1e-bbf2-437a-b0c4-4966d6111750</elementGuidId>
+   <elementGuidId>783e9687-7e00-44bf-94ac-5cf8e69ee987</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_unified_search_keyword_title2</value>
-      <webElementGuid>d6dc9fe1-9aeb-489f-9b1b-8db155fd5440</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_unified_search_keyword_title2</value>
+      <webElementGuid>e4051bf8-701c-4eaf-be4d-8b64986b66a8</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_unified_search_keyword_title2']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_unified_search_keyword_title2']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

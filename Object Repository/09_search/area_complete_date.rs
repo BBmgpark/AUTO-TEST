@@ -3,7 +3,7 @@
    <description>검색 > 검색결과 > 진료시간 영역</description>
    <name>area_complete_date</name>
    <tag></tag>
-   <elementGuidId>0deda217-e1f2-4965-9ba0-84620fbafc49</elementGuidId>
+   <elementGuidId>bad39151-f1b2-45de-be65-3018b1603819</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/completeDate</value>
-      <webElementGuid>f7124d81-1dee-48a8-bf03-6c7038f2b487</webElementGuid>
+      <value>com.bbros.sayup.debug:id/completeDate</value>
+      <webElementGuid>912b792b-6871-4be4-aa67-f03b9f21d045</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/completeDate']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/completeDate']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

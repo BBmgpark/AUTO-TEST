@@ -3,7 +3,7 @@
    <description>마이페이지 > 복약관리 > [처방전 등록]</description>
    <name>btn_prescription</name>
    <tag></tag>
-   <elementGuidId>d3244d9e-0aa3-494e-9d0e-85c4acf39662</elementGuidId>
+   <elementGuidId>a14fdcd2-f8f1-4a03-a2ec-2adff7935d4f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/prescriptionQrCodeButtonText</value>
-      <webElementGuid>043f6cb6-bdb3-4fab-908e-a2d38a536d0a</webElementGuid>
+      <value>com.bbros.sayup.debug:id/prescriptionQrCodeButtonText</value>
+      <webElementGuid>bbd195ad-647b-484f-bac2-1585cb0bd154</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>처방전 등록</value>
-      <webElementGuid>bb6c29b0-330d-4061-a6e0-20a6aa47349b</webElementGuid>
+      <webElementGuid>e6a04e47-0ebf-4bca-8baa-9a793995451a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/prescriptionQrCodeButtonText' and (@text = '처방전 등록' or . = '처방전 등록')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/prescriptionQrCodeButtonText' and (@text = '처방전 등록' or . = '처방전 등록')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

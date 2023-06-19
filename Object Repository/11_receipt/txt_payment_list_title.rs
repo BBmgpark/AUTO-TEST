@@ -3,7 +3,7 @@
    <description>접수/예약 > 결제수단 선택</description>
    <name>txt_payment_list_title</name>
    <tag></tag>
-   <elementGuidId>ae477582-7f13-4a14-9904-676696d337ac</elementGuidId>
+   <elementGuidId>1880d04c-c609-4226-baee-f518176ff550</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvPaymentListTitle</value>
-      <webElementGuid>d42134f7-8f0e-449f-a48f-d674a7c56690</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvPaymentListTitle</value>
+      <webElementGuid>f3a3f4f3-f35b-480a-a0f7-5b532e196519</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvPaymentListTitle']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvPaymentListTitle']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

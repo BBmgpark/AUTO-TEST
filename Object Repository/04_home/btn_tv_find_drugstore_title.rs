@@ -3,7 +3,7 @@
    <description>홈 > [내 주변 약국 찾기]</description>
    <name>btn_tv_find_drugstore_title</name>
    <tag></tag>
-   <elementGuidId>f0dd621f-5e62-4d5e-acc8-a0b7cf4a8a3f</elementGuidId>
+   <elementGuidId>799071f2-8c86-4fdc-a5fb-533750e35688</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_find_drugstore_title</value>
-      <webElementGuid>15d0cc59-ec82-4719-bfdb-3669f9d8a54f</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_find_drugstore_title</value>
+      <webElementGuid>34c0fef3-ba2d-44a0-8e2d-af69b3f90cde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>내 주변 약국 찾기</value>
-      <webElementGuid>8d3f4796-9c24-4b7e-a776-00b03086fa25</webElementGuid>
+      <webElementGuid>5b497b30-5509-41b4-81e0-77d750273aa2</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_find_drugstore_title' and (@text = '내 주변 약국 찾기' or . = '내 주변 약국 찾기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_find_drugstore_title' and (@text = '내 주변 약국 찾기' or . = '내 주변 약국 찾기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

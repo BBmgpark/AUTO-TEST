@@ -3,7 +3,7 @@
    <description>접수완료 > 고유식별정보의 수집 및 이용 동의</description>
    <name>txt_cb_title</name>
    <tag></tag>
-   <elementGuidId>12b5378b-76f7-4088-bc1b-00b1a0116bf7</elementGuidId>
+   <elementGuidId>0021f441-0037-404a-945e-0a651b0f52a1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/cb_title</value>
-      <webElementGuid>28e25d9d-042b-4978-ae26-806f72430812</webElementGuid>
+      <value>com.bbros.sayup.debug:id/cb_title</value>
+      <webElementGuid>e009bd16-29b7-42ce-be8d-075a26b646ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>고유식별정보의 수집 및 이용 동의</value>
-      <webElementGuid>98a5cf08-3401-42ca-bb93-1345bf13bb07</webElementGuid>
+      <webElementGuid>8430f98c-c025-4666-9e1d-f2e59ad7a3f1</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/cb_title' and (@text = '고유식별정보의 수집 및 이용 동의' or . = '고유식별정보의 수집 및 이용 동의')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/cb_title' and (@text = '고유식별정보의 수집 및 이용 동의' or . = '고유식별정보의 수집 및 이용 동의')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

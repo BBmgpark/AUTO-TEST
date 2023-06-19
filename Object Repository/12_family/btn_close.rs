@@ -3,7 +3,7 @@
    <description>가족관리 > 자녀 정보 > [x]</description>
    <name>btn_close</name>
    <tag></tag>
-   <elementGuidId>61919b89-7973-45ce-a212-4cfd9e1f390b</elementGuidId>
+   <elementGuidId>40b68ede-5443-4bc7-8a96-d537a2fbe6af</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/frame_close</value>
-      <webElementGuid>10f5a589-a564-40c0-a5c8-4deed8321f27</webElementGuid>
+      <value>com.bbros.sayup.debug:id/frame_close</value>
+      <webElementGuid>668f3f68-828f-494a-98be-c5647af483d0</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/frame_close']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/frame_close']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

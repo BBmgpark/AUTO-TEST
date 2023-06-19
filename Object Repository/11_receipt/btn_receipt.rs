@@ -3,7 +3,7 @@
    <description>접수/예약 > [지금 방문할게요]</description>
    <name>btn_receipt</name>
    <tag></tag>
-   <elementGuidId>eb2f443c-db3a-4eb7-9091-a8bad569b388</elementGuidId>
+   <elementGuidId>636a5c31-72f9-4a3f-b7c9-b9e485483375</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>e31404c1-9feb-4abe-b845-44d09089594a</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>9f67015d-1ced-4729-9cae-facdb63ce112</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>지금 방문할게요.</value>
-      <webElementGuid>2e0fe31c-086f-4c41-89d8-034d260bb5ca</webElementGuid>
+      <webElementGuid>f202c310-2a61-4ef8-a58a-b45a6e611f20</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt' and (@text = '지금 방문할게요.' or . = '지금 방문할게요.')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt' and (@text = '지금 방문할게요.' or . = '지금 방문할게요.')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

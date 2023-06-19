@@ -3,7 +3,7 @@
    <description>가족관리 > 공유계정 추가 > 공유받은 초대코드 입력</description>
    <name>input_invitation_code</name>
    <tag></tag>
-   <elementGuidId>ab64385d-2ba9-4e46-b948-4e1d408803a2</elementGuidId>
+   <elementGuidId>c0ed4aad-7810-4d66-823e-fbad4b4e3923</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/et_invite_code</value>
-      <webElementGuid>3355f434-9092-4a8c-a0e5-98fdd3c65f41</webElementGuid>
+      <value>com.bbros.sayup.debug:id/et_invite_code</value>
+      <webElementGuid>39e734ab-4c8d-470a-891e-b43f8135f87d</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/et_invite_code']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/et_invite_code']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

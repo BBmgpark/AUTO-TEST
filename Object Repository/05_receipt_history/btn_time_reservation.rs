@@ -3,7 +3,7 @@
    <description>진료내역 > 상세 > [시간예약]</description>
    <name>btn_time_reservation</name>
    <tag></tag>
-   <elementGuidId>1f01484d-88ea-4bd8-ab3d-a8ca63928e3b</elementGuidId>
+   <elementGuidId>129011cb-9d39-4f70-b086-a10e4bb3df6e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>25d711a9-9a05-4674-b49f-10457627ad80</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>47f0a394-eef2-43bf-bbcc-015ff8a59c81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>시간예약</value>
-      <webElementGuid>53ef5ccf-89be-4216-afb0-b3b38ea5fbaf</webElementGuid>
+      <webElementGuid>4f7690da-f842-4d59-9ccf-d291f3e76590</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '시간예약' or . = '시간예약')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '시간예약' or . = '시간예약')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

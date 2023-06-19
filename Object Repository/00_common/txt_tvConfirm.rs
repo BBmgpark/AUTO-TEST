@@ -3,7 +3,7 @@
    <description>[확인]</description>
    <name>txt_tvConfirm</name>
    <tag></tag>
-   <elementGuidId>e53a99a9-feef-4fc7-bd3e-efb01c54849f</elementGuidId>
+   <elementGuidId>f9965b33-3a8b-4f14-b113-7f6abebdc331</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvConfirm</value>
-      <webElementGuid>b87f573c-4e44-4614-b179-1a99603af36d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvConfirm</value>
+      <webElementGuid>99fa2f66-d1c8-4eb8-bd04-ad0193499b15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>확인</value>
-      <webElementGuid>ae8e77a8-3e6b-4cc0-b9b7-dc731a234165</webElementGuid>
+      <webElementGuid>a57fe742-9cf6-48c5-a096-2f10076b5af7</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvConfirm' and (@text = '확인' or . = '확인')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvConfirm' and (@text = '확인' or . = '확인')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>가족관리 > [+] 공유계정 추가 버튼</description>
    <name>btn_add</name>
    <tag></tag>
-   <elementGuidId>17148b33-04c3-4638-a745-d02d969d20e9</elementGuidId>
+   <elementGuidId>538fb240-cdd7-4d00-aa26-374e7f4e5423</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/iv_add</value>
-      <webElementGuid>1cced02b-fd67-4b5e-a6c7-ba6027c4a084</webElementGuid>
+      <value>com.bbros.sayup.debug:id/iv_add</value>
+      <webElementGuid>33a22ca4-d723-4e27-b3e1-b7f3b922511f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/iv_add']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/iv_add']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

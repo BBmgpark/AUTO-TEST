@@ -3,7 +3,7 @@
    <description></description>
    <name>btn_all_delete</name>
    <tag></tag>
-   <elementGuidId>45dbd532-358a-4b13-b9e9-1c696528423d</elementGuidId>
+   <elementGuidId>dcc2c595-197a-433a-88c1-d739a24ed143</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.sec.android.app.launcher:id/clear_all_button</value>
-      <webElementGuid>ea4955e5-dab6-4518-a321-2299e9bbc1e3</webElementGuid>
+      <webElementGuid>4acdd8d4-6a17-4c8d-8250-4d1c3d3072cd</webElementGuid>
    </webElementProperties>
    <locator>//*[@resource-id = 'com.sec.android.app.launcher:id/clear_all_button']</locator>
    <locatorStrategy>XPATH</locatorStrategy>

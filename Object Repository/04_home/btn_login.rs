@@ -3,7 +3,7 @@
    <description>홈 > 로그인 유도 영역 > [시작하기]</description>
    <name>btn_login</name>
    <tag></tag>
-   <elementGuidId>09fb0a68-4ed3-4614-955e-a66f7f96b1aa</elementGuidId>
+   <elementGuidId>933da6ce-dc9a-40da-a358-37a329957274</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/btn_login</value>
-      <webElementGuid>d773063e-0a36-4caf-97c9-6b158ee12d97</webElementGuid>
+      <value>com.bbros.sayup.debug:id/btn_login</value>
+      <webElementGuid>ff9a0e94-e628-40eb-9396-b61bb2639665</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/btn_login']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/btn_login']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

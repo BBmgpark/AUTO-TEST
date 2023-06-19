@@ -209,7 +209,7 @@ Mobile.tap(findTestObject('09_search/btn_map'), GlobalVariable.fixedTime, Failur
 '기대결과 - 병원 지도 화면으로 이동'
 Mobile.verifyElementVisible(findTestObject('09_search/area_naver_map'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //네이버 지도
 Mobile.verifyElementVisible(findTestObject('09_search/area_hospital_map_list'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //바텀시트 영역
-Mobile.verifyElementText(findTestObject('09_search/txt_map_hospital_name'), hospital_name3, FailureHandling.CONTINUE_ON_FAILURE) //검색 목록 첫번째 병원이름
+Mobile.verifyElementVisible(findTestObject('09_search/txt_map_hospital_name', [('text') : hospital_name3]), GlobalVariable.fixedTime) //검색 목록 첫번째 병원이름
 
 'STEP - 병원 선택'
 Mobile.tap(findTestObject('09_search/area_hospital_map_list'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

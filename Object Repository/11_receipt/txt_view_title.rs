@@ -3,7 +3,7 @@
    <description>tv_title</description>
    <name>txt_view_title</name>
    <tag></tag>
-   <elementGuidId>be327a7f-ec47-4669-abd6-9d028f4cf55e</elementGuidId>
+   <elementGuidId>c8546ffd-3d23-4e8b-a0f8-a5c9887a5f09</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>9f1684fd-0ca6-411c-bdbe-5424b493981a</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>e43438d9-9170-4627-ae92-a9d22effd4c6</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>진료내역 > 필터</description>
    <name>btn_filter</name>
    <tag></tag>
-   <elementGuidId>ba6f668c-8af4-48b4-979a-6748992d5ad8</elementGuidId>
+   <elementGuidId>fadf35db-1532-44b7-9652-e39f255b3b92</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>7a65d1ff-349d-4f5a-87dc-0e46b478929d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>33c312cd-8918-432f-9152-6f1e46b26c33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>66afbc7b-57f6-4dff-8852-91d780d2d06a</webElementGuid>
+      <webElementGuid>211aeaa0-e83a-4835-a4d3-0f3b634e4f68</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

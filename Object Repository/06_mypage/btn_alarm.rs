@@ -3,7 +3,7 @@
    <description>마이페이지 > 병원 알림</description>
    <name>btn_alarm</name>
    <tag></tag>
-   <elementGuidId>441dbdd3-233a-47be-9ce5-c86f4b2198df</elementGuidId>
+   <elementGuidId>83ee7d65-c559-4619-93b9-44bed6b8dff7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/right1Btn</value>
-      <webElementGuid>18f69d38-0533-4fcc-b7de-de925935a3c1</webElementGuid>
+      <value>com.bbros.sayup.debug:id/right1Btn</value>
+      <webElementGuid>7d28613c-64ea-4b07-b7e8-e0b1d55525fb</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/right1Btn']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/right1Btn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

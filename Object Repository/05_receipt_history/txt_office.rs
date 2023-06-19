@@ -3,7 +3,7 @@
    <description>진료내역 > 상세 > 진료실</description>
    <name>txt_office</name>
    <tag></tag>
-   <elementGuidId>c094b4c4-63f5-403a-8f53-be50aeac063a</elementGuidId>
+   <elementGuidId>817f9420-a988-4dd8-b267-b7f8887d4b40</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/officeTxt</value>
-      <webElementGuid>d9292aaa-31f3-4c73-8050-613a31428ae4</webElementGuid>
+      <value>com.bbros.sayup.debug:id/officeTxt</value>
+      <webElementGuid>64572613-e6cb-4068-86fa-a3b9049eacf8</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/officeTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/officeTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

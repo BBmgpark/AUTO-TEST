@@ -3,7 +3,7 @@
    <description>검색 > 검색결과 > sort 필터</description>
    <name>txt_sort_type</name>
    <tag></tag>
-   <elementGuidId>fc04dbf8-b13a-4c2f-b161-80852746d793</elementGuidId>
+   <elementGuidId>6de51aab-6001-4ca9-852b-7d713aaa63da</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvSortType</value>
-      <webElementGuid>911591f3-0ac5-4974-9b5d-6eae8a6d3abc</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvSortType</value>
+      <webElementGuid>a0d46e3c-f812-4c92-a338-ff8c23e65abf</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvSortType']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvSortType']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

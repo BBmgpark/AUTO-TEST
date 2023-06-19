@@ -3,7 +3,7 @@
    <description>마이페이지 > [수정]</description>
    <name>btn_edit</name>
    <tag></tag>
-   <elementGuidId>a545c79d-0be7-45d6-8bee-af56acdaca9c</elementGuidId>
+   <elementGuidId>3b5c7dd9-872c-44b3-aeb0-e521db6696f9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>cfda5b6e-859a-4c05-8407-988f39f75fdf</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>8ab6ffb0-59e5-4ef4-b786-67d3bd603966</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>수정</value>
-      <webElementGuid>70f2fa47-5b2f-44bf-ade6-89259744a283</webElementGuid>
+      <webElementGuid>4c692b7c-94c9-4666-943c-37579790404a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '수정' or . = '수정')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '수정' or . = '수정')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

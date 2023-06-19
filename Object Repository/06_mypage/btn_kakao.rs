@@ -3,7 +3,7 @@
    <description>마이페이지 > 개인정보 수정 > [연동하기]</description>
    <name>btn_kakao</name>
    <tag></tag>
-   <elementGuidId>1213d53d-e33a-4aba-add0-11da4d74debd</elementGuidId>
+   <elementGuidId>c9eda37e-f62a-423c-90c7-deff72eb5e55</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/commonBtnTitle</value>
-      <webElementGuid>6321efe8-436a-4af1-b9d9-fa9c70ddd23c</webElementGuid>
+      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
+      <webElementGuid>fa9aa327-e89d-4182-8b74-066e7e079345</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>연동하기</value>
-      <webElementGuid>95f2c660-c50f-4091-a06c-948f8ba348cd</webElementGuid>
+      <webElementGuid>4bbf3975-de39-48d6-9311-58f695656917</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '연동하기' or . = '연동하기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '연동하기' or . = '연동하기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

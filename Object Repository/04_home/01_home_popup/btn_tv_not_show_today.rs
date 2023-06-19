@@ -3,7 +3,7 @@
    <description>홈 > 이벤트 팝업 > [오늘 그만 보기]</description>
    <name>btn_tv_not_show_today</name>
    <tag></tag>
-   <elementGuidId>a5697fa0-42c6-447a-b9c6-60dca605b392</elementGuidId>
+   <elementGuidId>c1f0e302-fa01-4007-aa8e-83f937d0b8f3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_not_show_today</value>
-      <webElementGuid>e2d4af13-77cb-4dbc-a22f-a96ab66573f6</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_not_show_today</value>
+      <webElementGuid>ec820dbf-a876-48ca-b9c7-6243786e8968</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>오늘 그만 보기</value>
-      <webElementGuid>bfeef746-5e6b-450b-a4a4-01178b716360</webElementGuid>
+      <webElementGuid>bbbe3001-c543-4ef4-a739-138185708b84</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_not_show_today' and (@text = '오늘 그만 보기' or . = '오늘 그만 보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_not_show_today' and (@text = '오늘 그만 보기' or . = '오늘 그만 보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

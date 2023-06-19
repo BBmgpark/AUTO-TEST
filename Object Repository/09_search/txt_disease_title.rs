@@ -3,7 +3,7 @@
    <description>검색 > 질병 검색 > 질병정보 > 타이틀</description>
    <name>txt_disease_title</name>
    <tag></tag>
-   <elementGuidId>1aafe46e-2560-42d6-bd01-a22cb1dcc8e9</elementGuidId>
+   <elementGuidId>45b811a4-7819-422c-966c-0e74675d30ba</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/diseaseTitle</value>
-      <webElementGuid>d7cc2c20-68f7-4733-b521-4298efbddaa2</webElementGuid>
+      <value>com.bbros.sayup.debug:id/diseaseTitle</value>
+      <webElementGuid>c4067cdf-7170-456c-bdcc-9c5a6c3faa0a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/diseaseTitle']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/diseaseTitle']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

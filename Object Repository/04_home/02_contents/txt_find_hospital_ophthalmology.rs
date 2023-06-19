@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 진료과로 병원 찾기 > 안과</description>
    <name>txt_find_hospital_ophthalmology</name>
    <tag></tag>
-   <elementGuidId>441645ad-4a32-42b9-9b53-467143c52fc5</elementGuidId>
+   <elementGuidId>7614be9d-2cd7-4139-91e7-2e39c1fcc639</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>3c9ca500-f6d8-4980-963f-f818a1a1b494</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_title</value>
+      <webElementGuid>f0793ca7-c59a-45b9-8ff8-fa95092684d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>안과</value>
-      <webElementGuid>05142744-f159-43da-ae26-b6e9f2fa877c</webElementGuid>
+      <webElementGuid>db02d07f-14f4-472b-8718-33a1e680ecb1</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '안과' or . = '안과')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title' and (@text = '안과' or . = '안과')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

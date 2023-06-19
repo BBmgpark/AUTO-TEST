@@ -3,7 +3,7 @@
    <description>로그인 화면 > 닫기 [x]</description>
    <name>btn_ivClose</name>
    <tag></tag>
-   <elementGuidId>08834520-b3c4-4f53-b3a6-ecc835d97e64</elementGuidId>
+   <elementGuidId>62eb8411-a60f-4c43-a323-4a95aa5f68d4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/ivClose</value>
-      <webElementGuid>6014ad89-60be-4e47-9353-d8400e3b0c63</webElementGuid>
+      <value>com.bbros.sayup.debug:id/ivClose</value>
+      <webElementGuid>2d98ad18-3e6c-4097-a9f4-61f570d75b9f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/ivClose']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/ivClose']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

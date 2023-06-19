@@ -3,7 +3,7 @@
    <description>병원상세 > 병원리뷰 > [?] 정보 더보기 버튼</description>
    <name>btn_more</name>
    <tag></tag>
-   <elementGuidId>aac0d3d9-3e05-4ef4-b0dd-56ea5352944d</elementGuidId>
+   <elementGuidId>8526ae5b-cf65-4a14-96fd-55bdecd8e5aa</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.Image</value>
-      <webElementGuid>58447015-40b4-4176-a490-3c6e56979620</webElementGuid>
+      <webElementGuid>91a1aee8-5f6d-4eb6-a615-43e3464dc3fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>text</name>
       <type>Main</type>
       <value>정보 더보기</value>
-      <webElementGuid>d3578d48-e940-428e-9473-8a891b245fec</webElementGuid>
+      <webElementGuid>bd019ea2-bc74-4a2f-88b7-e1e89651d98c</webElementGuid>
    </webElementProperties>
    <locator>//*[@class = 'android.widget.Image' and (@text = '정보 더보기' or . = '정보 더보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>

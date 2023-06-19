@@ -3,7 +3,7 @@
    <description>마이페이지 > 개인정보 수정 > 연동하기 > 간편로그인</description>
    <name>btn_kakao_container</name>
    <tag></tag>
-   <elementGuidId>44f77598-8be0-4b9a-af10-7e0f3fa29a33</elementGuidId>
+   <elementGuidId>7cb1d2e5-f5e4-412f-b944-b5c4ca67d7ce</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/loginWithKakaoTalkContainer</value>
-      <webElementGuid>8a2dd093-f163-4d59-aae1-c9731fb302c5</webElementGuid>
+      <value>com.bbros.sayup.debug:id/loginWithKakaoTalkContainer</value>
+      <webElementGuid>e6a7a5ec-d11a-4810-962a-e706bb4aaecc</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/loginWithKakaoTalkContainer']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/loginWithKakaoTalkContainer']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

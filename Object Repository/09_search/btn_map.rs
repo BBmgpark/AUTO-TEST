@@ -3,7 +3,7 @@
    <description>검색 > 검색결과 > [지도보기]</description>
    <name>btn_map</name>
    <tag></tag>
-   <elementGuidId>390deb02-b9b7-4019-a6eb-dfb28500c45e</elementGuidId>
+   <elementGuidId>0d3fa43c-747e-4ad0-b585-c6abd6ec9941</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvMapText</value>
-      <webElementGuid>8980e3ac-cf97-411d-826f-5149beb29e32</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvMapText</value>
+      <webElementGuid>0786f6dc-bc65-46d8-8570-caf2a0e5bd6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>지도보기</value>
-      <webElementGuid>0a3dd084-5b67-44e9-8a2b-75ed5d84ca74</webElementGuid>
+      <webElementGuid>e0682ed6-b02e-4583-9d45-9b4cd4087742</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvMapText' and (@text = '지도보기' or . = '지도보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvMapText' and (@text = '지도보기' or . = '지도보기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

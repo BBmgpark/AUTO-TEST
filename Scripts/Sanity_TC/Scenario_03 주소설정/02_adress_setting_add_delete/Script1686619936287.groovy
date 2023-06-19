@@ -50,7 +50,7 @@ if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_login'), GlobalV
 }
 //
 
-//이메일 계정 로그인 (qa22@qa.com)
+//이메일 계정 로그인 (qa20@qa.com)
 'STEP - 홈 [시작하기] 버튼 선택'
 Mobile.tap(findTestObject('04_home/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
@@ -58,7 +58,7 @@ Mobile.tap(findTestObject('04_home/btn_login'), GlobalVariable.fixedTime, Failur
 Mobile.tap(findTestObject('02_onboarding/btn_tvEmailLoginBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 'STEP - 이메일 id 입력'
-Mobile.setText(findTestObject('03_login/input_etEmail'), GlobalVariable.email_id_22, GlobalVariable.fixedTime)
+Mobile.setText(findTestObject('03_login/input_etEmail'), GlobalVariable.email_id, GlobalVariable.fixedTime)
 	
 'STEP - 이메일 password 입력'
 Mobile.setText(findTestObject('03_login/input_etPassword'), GlobalVariable.email_password, GlobalVariable.fixedTime)

@@ -3,7 +3,7 @@
    <description>마이페이지 > [공지사항]</description>
    <name>btn_noti</name>
    <tag></tag>
-   <elementGuidId>15a12d2d-85f4-4465-a081-567bc70dc7cb</elementGuidId>
+   <elementGuidId>0b6b8816-61e3-455f-98fb-3082f961ab3e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tvUserSurvey</value>
-      <webElementGuid>50474d07-c635-4a5c-9514-d108f2b57d2d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvUserSurvey</value>
+      <webElementGuid>cadb424a-9dd6-4c1d-b4aa-018f24feae73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>공지사항</value>
-      <webElementGuid>70734352-312f-443a-b7e1-17c65cdd8cac</webElementGuid>
+      <webElementGuid>3d3821bc-bab4-4ad1-8be9-de202d006a11</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvUserSurvey' and (@text = '공지사항' or . = '공지사항')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvUserSurvey' and (@text = '공지사항' or . = '공지사항')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

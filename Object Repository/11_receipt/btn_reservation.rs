@@ -3,7 +3,7 @@
    <description>접수/예약 > [날짜를 선택할게요.]</description>
    <name>btn_reservation</name>
    <tag></tag>
-   <elementGuidId>74302e83-a48a-4fe2-8c04-919618294e6d</elementGuidId>
+   <elementGuidId>2a5c83a4-cdf0-4274-b164-cbcfae2a7737</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/titleTxt</value>
-      <webElementGuid>2f144f02-d791-4339-ab96-63f99eaa9aed</webElementGuid>
+      <value>com.bbros.sayup.debug:id/titleTxt</value>
+      <webElementGuid>3784025d-884e-40d5-998c-8a88e23d0b3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>날짜를 선택할게요.</value>
-      <webElementGuid>e8b72ec3-c4f9-496d-b989-c4986813fcb9</webElementGuid>
+      <webElementGuid>5e70c3c2-35e6-47fe-b50e-179e5de6d4ae</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/titleTxt' and (@text = '날짜를 선택할게요.' or . = '날짜를 선택할게요.')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/titleTxt' and (@text = '날짜를 선택할게요.' or . = '날짜를 선택할게요.')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>건강피드 > 성장관리 > 키</description>
    <name>input_number</name>
    <tag></tag>
-   <elementGuidId>9809491a-1c36-417b-a06a-6a0950a5be95</elementGuidId>
+   <elementGuidId>caade4dd-ca0d-4073-9b79-3149fda92e0f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/inputTxt</value>
-      <webElementGuid>bc6d53c7-d916-4aa0-9981-4adb4c7e292d</webElementGuid>
+      <value>com.bbros.sayup.debug:id/inputTxt</value>
+      <webElementGuid>899ada26-535b-4004-8fa1-c453380596c8</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/inputTxt']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/inputTxt']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
