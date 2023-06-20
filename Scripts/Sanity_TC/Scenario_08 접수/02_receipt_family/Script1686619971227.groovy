@@ -62,7 +62,7 @@ Mobile.tap(findTestObject('10_hospital_detail/btn_left', [('text') : '바로접�
 }
 
 '기대결과 - 접수하기 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 똑닥가정의학과의원)', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
 Mobile.verifyElementText(findTestObject('11_receipt/txt_choose'), '진료대상 선택', FailureHandling.CONTINUE_ON_FAILURE) //진료대상 선택
 
 'STEP - 생성된 자녀 {아들}가 없으면 자녀 추가'
@@ -102,7 +102,7 @@ Mobile.tap(findTestObject('12_family/btn_add_use', [('text') : '고유식별정�
 Mobile.tap(findTestObject('12_family/btn_add_complet'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 '기대결과 - 접수하기 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 똑닥가정의학과의원)', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 'STEP - 진료대상 가족 선택'
@@ -133,7 +133,7 @@ if(Mobile.waitForElementPresent(findTestObject('11_receipt/txt_transmission_titl
 	}
 	
 	'기대결과 - 접수하기 화면으로 이동'
-	Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 똑닥가정의학과의원)', FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 '가족 접수 알림 팝업이 노출되는 경우 [확인] 버튼 선택'
@@ -163,6 +163,19 @@ Mobile.scrollToText('기타')
 
 'STEP - 진료항목 {기타} 선택'
 Mobile.tap(findTestObject('11_receipt/txt_item', [('text') : '기타']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 결제수단 영역이 노출되면 직접결제로 전환'
+if(Mobile.waitForElementPresent(findTestObject('00_common/txt_tvTitle', [('text') : '결제수단']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
+	{
+		'STEP - 결제수단 영역 선택'
+		Mobile.tap(findTestObject('00_common/txt_tvTitle', [('text') : '결제수단']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		'STEP - [병원에서 직접결제] 버튼 선택'
+		Mobile.tap(findTestObject('11_receipt/btn_direct'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		'STEP - [확인] 버튼 선택'
+		Mobile.tap(findTestObject('00_common/txt_tvConfirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	}
 
 'STEP - [다음] 버튼 선택'
 Mobile.tap(findTestObject('11_receipt/btn_next'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) 

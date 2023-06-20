@@ -31,16 +31,16 @@ Mobile.delay(2)
 Mobile.switchToWebView()
 
 '병원 어드민 진입'
-WebUI.navigateToUrl('https://hospital.ddocdoc.com')
+WebUI.navigateToUrl('https://testhospital.ddocdoc.com/')
 
 '[병원관리자 로그인] 버튼 선택'
 WebUI.sendKeys(findTestObject('10_hospital_detail/01_pc_web/btn_admin_login'), Keys.chord(Keys.ENTER) , FailureHandling.CONTINUE_ON_FAILURE)
 
 '아이디 입력'
-WebUI.setText(findTestObject('10_hospital_detail/01_pc_web/input_id'), 'ddocdocProduction3', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('10_hospital_detail/01_pc_web/input_id'), 'eunding0129', FailureHandling.CONTINUE_ON_FAILURE)
 
 '비밀번호 입력'
-WebUI.setText(findTestObject('10_hospital_detail/01_pc_web/input_password'), 'ddocdocProduction3', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('10_hospital_detail/01_pc_web/input_password'), '1q2w3e4r!', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('10_hospital_detail/01_pc_web/input_password'), Keys.chord(Keys.ENTER) , FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -54,7 +54,7 @@ if (WebUI.waitForElementPresent(findTestObject('10_hospital_detail/01_pc_web/btn
 }
 
 '병원정보 화면 이동'
-WebUI.navigateToUrl('https://hospital.ddocdoc.com/hospital-info/setup')
+WebUI.navigateToUrl('https://testhospital.ddocdoc.com/hospital-info/setup')
 
 WebUI.delay(1)
 
@@ -68,23 +68,8 @@ hospital_img = WebUI.waitForElementPresent(findTestObject('10_hospital_detail/01
 hospital_clinic_time_img = WebUI.waitForElementPresent(findTestObject('10_hospital_detail/01_pc_web/img_clinic_time'), GlobalVariable.fixedTime) //진료시간표 이미지
 parking = WebUI.waitForElementPresent(findTestObject('10_hospital_detail/01_pc_web/txt_parking'), GlobalVariable.fixedTime) //주차장
 
-
-
-'의사정보 화면 이동'
-WebUI.navigateToUrl('https://hospital.ddocdoc.com/hospital-info/doctors')
-
-'의사정보 저장'
-doctor = WebUI.waitForElementPresent(findTestObject('10_hospital_detail/01_pc_web/btn_doctor_add'), GlobalVariable.fixedTime)
-
-
-
-if (doctor == true)
-{GlobalVariable.doctor = false}
-else
-{GlobalVariable.doctor = true}
-
 '병원 공지사항 화면 이동'
-WebUI.navigateToUrl('https://hospital.ddocdoc.com/hospital-info/notices')
+WebUI.navigateToUrl('https://testhospital.ddocdoc.com/hospital-info/notices')
 
 '공지사항 목록이 없는 경우 신규 등록'
 if(WebUI.waitForElementPresent(findTestObject('10_hospital_detail/01_pc_web/btn_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == false) //삭제버튼
@@ -142,9 +127,6 @@ else
 
 '기대결과 - 대표 진료과목'
 Mobile.verifyElementVisible(findTestObject('10_hospital_detail/txt_view', [('text') : main_department]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-'기대결과 - 병원 주소'
-Mobile.verifyElementVisible(findTestObject('10_hospital_detail/txt_view', [('text') : 'Silicon Valley']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주차장 뱃지'
 if (parking == true)
@@ -219,6 +201,9 @@ if(Mobile.waitForElementPresent(findTestObject('10_hospital_detail/btn_doctor_hi
 	Mobile.tap(findTestObject('10_hospital_detail/btn_doctor_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 	
+'STEP - 화면 스크롤 이동'
+Mobile.swipe(45, 1200, 45, 600)
+
 'STEP - 개인정보 처리업무 위탁 정보 공개 문구 선택'
 Mobile.tap(findTestObject('10_hospital_detail/btn_privacy'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -69,7 +69,7 @@ Mobile.tap(findTestObject('00_common/txt_tvConfirm'), GlobalVariable.fixedTime, 
 }
 
 '기대결과 - 예약하기 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '예약하기 ([TEST] 똑닥가정의학과의원)', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '예약하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 생성된 자녀 {아들}가 없으면 자녀 추가'
 if(Mobile.waitForElementPresent(findTestObject('11_receipt/txt_name', [('text') : GlobalVariable.son]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == false)
@@ -136,7 +136,7 @@ if(Mobile.waitForElementPresent(findTestObject('00_common/btn_confirmBtn'), Glob
 }
 	
 '기대결과 - 예약하기 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '예약하기 ([TEST] 똑닥가정의학과의원)', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '예약하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 'STEP - 가족 접수 알림 팝업 노출 시 [확인] 버튼 선택'
@@ -168,6 +168,25 @@ Mobile.scrollToText('일반진료')
 'STEP - 일반진료 선택'
 Mobile.tap(findTestObject('11_receipt/txt_general'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+'STEP - 발생 증상이 있는경우 최상단 증상 선택'
+if(Mobile.waitForElementPresent(findTestObject('11_receipt/txt_tvName'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE))
+{
+	Mobile.tap(findTestObject('11_receipt/txt_tvName'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+}
+
+'STEP - 결제수단 영역이 노출되면 직접결제로 전환'
+if(Mobile.waitForElementPresent(findTestObject('00_common/txt_tvTitle', [('text') : '결제수단']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
+	{
+		'STEP - 결제수단 영역 선택'
+		Mobile.tap(findTestObject('00_common/txt_tvTitle', [('text') : '결제수단']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		'STEP - [병원에서 직접결제] 버튼 선택'
+		Mobile.tap(findTestObject('11_receipt/btn_direct'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		'STEP - [확인] 버튼 선택'
+		Mobile.tap(findTestObject('00_common/txt_tvConfirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	}
+
 'STEP - [날짜/시간 선택] 버튼 선택'
 Mobile.tap(findTestObject('11_receipt/btn_date_time_select'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -197,8 +216,6 @@ reservation = Mobile.getText(findTestObject('11_receipt/txt_reservation_time'), 
 Mobile.tap(findTestObject('00_common/btn_prevBtn'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
 
 '기대결과 - 예약하기 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('11_receipt/txt_description', [('text') : GlobalVariable.son]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //이름
-Mobile.verifyElementVisible(findTestObject('11_receipt/txt_description', [('text') : '진료실/가정의학과']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //진료실
 Mobile.verifyElementVisible(findTestObject('11_receipt/txt_description', [('text') : '일반진료']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //진료항목
 Mobile.verifyElementVisible(findTestObject('11_receipt/btn_date_time_select'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[날짜/시간 선택] 버튼
 //

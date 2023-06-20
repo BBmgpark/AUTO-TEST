@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>고정된 시간</description>
-      <initValue>5</initValue>
+      <initValue>3</initValue>
       <name>fixedTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
