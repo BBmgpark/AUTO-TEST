@@ -182,9 +182,10 @@ Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime
 'STEP - [<-] 이전 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(2)
+
 '기대결과 - 예약 취소, 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('04_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈
-Mobile.verifyElementNotVisible(findTestObject('04_home/area_vp_progress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //개인화
+Mobile.verifyElementVisible(findTestObject('04_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈
 
 'STEP - 최근앱 삭제'
 AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()

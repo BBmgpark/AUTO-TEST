@@ -172,8 +172,10 @@ Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(2)
+
 '기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('04_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 최근앱 삭제'
 AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
