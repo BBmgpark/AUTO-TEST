@@ -26,43 +26,33 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
+Mobile.delay(2)
+
 //찜한목록 진입
-'STEP - 찜한 목록 [☆] 버튼 선택'
+'STEP - 홈 화면 찜한 목록 [☆] 버튼 선택'
 Mobile.tap(findTestObject('03_home/btn_frame_favorite'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.delay(1)
-
-'기대결과 - 찜한 목록 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE)
-
-'STEP - [<-] 뒤로가기 버튼 선택'
-Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime)
-
-'기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
-//
-
-//병원 찾기
-'STEP - [☆]  홈 찜한 목록 버튼 선택'
-Mobile.tap(findTestObject('03_home/btn_frame_favorite'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-'기대결과 - 찜한 목록 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE)
-
-'STEP - 찜한 목록 리스트가 없는경우 병원 즐겨찾기 등록, 리스트가 있는경우 즐겨찾기 해제'
-if(Mobile.waitForElementPresent(findTestObject('07_favorits/btn_find_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
-{
-'STEP - [병원 찾기] 버튼 선택'
-Mobile.tap(findTestObject('07_favorits/btn_find_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(2)
 
-'기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+'기대결과 - 찜한 목록 화면으로 이동된다.'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE)
+//
 
-//병원 찾기 -> 즐겨찾기 등록
+//이전 화면 이동
+'STEP - [<-] 뒤로가기 버튼 선택'
+Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime)
+
+Mobile.delay(2)
+
+'기대결과 - 홈 화면으로 이동된다.'
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+//
+
+//병원 즐겨찾기 등록
 'STEP - 홈 검색바 선택'
 Mobile.tap(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2)
 
 'STEP - 병원명 입력'
 Mobile.setText(findTestObject('08_search/input_search'), GlobalVariable.hospital_name, GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -70,11 +60,17 @@ Mobile.setText(findTestObject('08_search/input_search'), GlobalVariable.hospital
 'STEP - [검색] 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_search'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(2)
+
 'STEP - 검색 결과 첫번째 리스트 [+] 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_result_plus'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(2)
+
 'STEP - 검색 결과 병원명 선택'
 Mobile.tap(findTestObject('08_search/txt_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2)
 
 'STEP - 병원상세 [☆] 즐겨찾기 버튼 선택'
 Mobile.tap(findTestObject('09_hospital_detail/btn_favorits'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -82,73 +78,94 @@ Mobile.tap(findTestObject('09_hospital_detail/btn_favorits'), GlobalVariable.fix
 'STEP - [<-] 병원상세 화면 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_webview_back'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - [<-] 뒤로가기 버튼 선택'
+Mobile.delay(2)
+
+'STEP - [<-] 검색화면 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+Mobile.delay(2)
 
+'기대결과 - 홈 화면으로 이동'
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+//
+
+Mobile.delay(2)
+
+//찜한 목록 등록된 병원 확인
 'STEP - [☆]  찜한 목록 버튼 선택'
 Mobile.tap(findTestObject('03_home/btn_frame_favorite'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 찜한 목록 화면으로 이동, 즐겨찾기한 병원 목록 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementVisible(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명
-}
+Mobile.delay(2)
+
+'기대결과 - 찜한 목록 화면으로 이동된다.'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE) 
+
+Mobile.scrollToText(GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 즐겨찾기 등록한 병원이 노출된다.'
+Mobile.verifyElementVisible(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
-else
-{
+
 //즐겨찾기 해제
 'STEP - 찜한목록 리스트 선택'
 Mobile.tap(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2)
 	
-'STEP - [☆]  즐겨찾기 버튼 선택'
+'STEP - [☆]  즐겨찾기 버튼 선택(해제)'
 Mobile.tap(findTestObject('09_hospital_detail/btn_favorits'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 'STEP - 병원상세 뒤로가기 [<-] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_webview_back'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - [<-] 뒤로가기 버튼 선택'
+Mobile.delay(2)
+
+'STEP - [<-] 검색화면 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - [☆]  찜한 목록 버튼 선택'
+Mobile.delay(2)
+
+'STEP - [☆]  홈 화면 찜한 목록 버튼 선택'
 Mobile.tap(findTestObject('03_home/btn_frame_favorite'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 찜한 목록 화면으로 이동, 즐겨찾기한 병원 목록 미노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementNotVisible(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명1
+Mobile.delay(2)
+
+'기대결과 - 찜한 목록 화면으로 이동된다.' 
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '찜한 목록', FailureHandling.CONTINUE_ON_FAILURE) 
+
+'기대결과 - 즐겨찾기 해제한 병원이 노출되지 않는다.'
+Mobile.verifyElementNotVisible(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
-}
 
 //약국 찾기
 'STEP - 찜한 약국 tab 선택'
 Mobile.tap(findTestObject('07_favorits/txt_tab_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 찜한 약국 TAB 화면 노출'
-Mobile.verifyElementText(findTestObject('07_favorits/txt_empty_title'), '찜한 약국이 없어요.', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementVisible(findTestObject('07_favorits/btn_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[약국 찾기] 버튼
+'기대결과 - 찜한 약국 TAB 화면이 노출된다.'
+Mobile.verifyElementText(findTestObject('07_favorits/txt_empty_title'), '찜한 약국이 없어요.', FailureHandling.CONTINUE_ON_FAILURE) 
+Mobile.verifyElementVisible(findTestObject('07_favorits/btn_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) 
 
 'STEP - [약국 찾기] 버튼 선택'
 Mobile.tap(findTestObject('07_favorits/btn_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
+Mobile.delay(2)
 
-'기대결과 - 네이버 지도 화면으로 이동'
+'기대결과 - 네이버 지도화면에 지역 동명이 노출된다.'
 if(GlobalVariable.adress_name == '상동')
 {
-'기대결과 - "상동 약국" 타이틀 노출'
+'기대결과 - "상동 약국" 타이틀틀이 노출된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_toolbarText'), '상동 약국', FailureHandling.CONTINUE_ON_FAILURE)
 }
 else
 {
-'기대결과 - "여의도동 약국" 타이틀 노출'
+'기대결과 - "여의도동 약국" 타이틀이 노출된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_toolbarText'), '여의도동 약국', FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-'기대결과 - [현위치] 버튼 노출'
+'기대결과 - [현위치] 버튼이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('00_common/btn_userLocationBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - [연중무휴] 버튼 노출'
+'기대결과 - [연중무휴] 버튼이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('00_common/btn_layout'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
@@ -156,11 +173,12 @@ Mobile.verifyElementVisible(findTestObject('00_common/btn_layout'), GlobalVariab
 'STEP - 뒤로가기 버튼 선택'
 Mobile.pressBack(FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+Mobile.delay(2)
+
+'기대결과 - 홈 화면으로 이동된다.'
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) 
 //
 
-'최근앱 삭제'
-AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
-Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 앱 종료'
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+driver.terminateApp('com.bbros.sayup.debug')
