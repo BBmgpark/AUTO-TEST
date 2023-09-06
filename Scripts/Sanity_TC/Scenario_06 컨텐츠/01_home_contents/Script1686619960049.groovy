@@ -26,23 +26,9 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-//NT - 웹뷰 요소 찾기 로딩 50초 걸리는 이유 파악 후 진행
-//'STEP - {실시간 투표 진행 중} 컨텐츠 선택'
-//Mobile.tap(findTestObject('03_home/02_contents/txt_real_time_vote_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//'기대결과 - 이벤트·투표 화면으로 이동'
-//Mobile.verifyElementVisible(findTestObject('03_home/02_contents/txt_event_vote_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//'STEP - [<-] 뒤로가기 버튼 선택'
-//Mobile.tap(findTestObject('00_common/btn_webview_back'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//'기대결과 - 홈 화면 노출'
-//Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴
-//Mobile.verifyElementVisible(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //검색 바
-
 //동네 인기 병원
 'STEP - {동네 인기 병원} 컨텐츠 선택'
-Mobile.tap(findTestObject('03_home/02_contents/txt_local_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/02_contents/txt_local_hospital'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 검색 화면으로 이동'
 Mobile.verifyElementText(findTestObject('08_search/input_search'), '인기 많은 똑닥 병원', FailureHandling.CONTINUE_ON_FAILURE) //검색어
@@ -322,14 +308,6 @@ Mobile.verifyElementVisible(findTestObject('08_search/txt_hospital_name'), Globa
 'STEP - 첫번째 병원 선택'
 Mobile.tap(findTestObject('08_search/txt_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-//병원 상세 위치정보 텍스트 못찾음.. 예외처리
-//'STEP - 화면 스크롤 이동'
-//Mobile.scrollToText('위치 정보')
-//
-//'기대결과 - 병원상세 화면 일요일 진료가능 시간 노출'
-//Mobile.verifyElementVisible(findTestObject('09_hospital_detail/txt_wiew_sunday'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //{일요일0}가 포함된 텍스트
-//
-
 'STEP - [<-] 병원상세 뒤로가기 버튼 선택'
 Mobile.pressBack()
 
@@ -413,26 +391,8 @@ if (Mobile.waitForElementNotPresent(findTestObject('03_home/area_rv_recommend_ho
 	Mobile.swipe(45, 1080, 45, 700)
 }
 
-'홈 추천 영역 병원 이름 저장'
-hospital_name = Mobile.getText(findTestObject('03_home/txt_recommend_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-'STEP - 병원 목록 선택'
-Mobile.tap(findTestObject('03_home/txt_recommend_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원 이름
 
-//병원상세 오류로 인해 예외처리
-//'기대결과 - 병원상세 화면으로 이동'
-//Mobile.verifyElementText(findTestObject('09_hospital_detail/txt_page_title'), hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-//
-//'STEP - [<-] 병원상세 뒤로가기 버튼 선택'
-//Mobile.tap(findTestObject('00_common/btn_webview_back'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.pressBack()
-
-'STEP - 최상단 스크롤 이동'
-Mobile.scrollToText('질병, 진료과, 병원을 검색해보세요.')
-
-'최근앱 삭제'
-AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
-Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 앱 종료'
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+driver.terminateApp('com.bbros.sayup.debug')
 
