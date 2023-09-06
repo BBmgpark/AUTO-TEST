@@ -27,13 +27,13 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 개인화 영역 선택'
-Mobile.tap(findTestObject('04_home/txt_tvHospitalTitle'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/txt_tvHospitalTitle'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [접수취소] 버튼 선택'
-Mobile.tap(findTestObject('05_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('04_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 접수취소 확인 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수취소', FailureHandling.CONTINUE_ON_FAILURE)
@@ -42,28 +42,28 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수취소
 Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 취소 안내 문구 노출'
-Mobile.verifyElementText(findTestObject('05_receipt_history/txt_detail_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_detail_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [바로접수] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_receipt_history/btn_detail_now_receipt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_receipt_history/btn_detail_now_receipt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [접수취소] 버튼 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('04_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 개인화 영역 선택'
-Mobile.tap(findTestObject('04_home/txt_tvHospitalTitle'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/txt_tvHospitalTitle'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [접수취소] 버튼 선택'
-Mobile.tap(findTestObject('05_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('04_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 접수취소 확인 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수취소', FailureHandling.CONTINUE_ON_FAILURE)
@@ -72,45 +72,45 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수취소
 Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 취소 안내 문구 노출'
-Mobile.verifyElementText(findTestObject('05_receipt_history/txt_detail_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_detail_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [바로접수] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_receipt_history/btn_detail_now_receipt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_receipt_history/btn_detail_now_receipt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [접수취소] 버튼 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('04_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 [진료내역] 메뉴 선택'
-Mobile.tap(findTestObject('04_home/btn_menu_history'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_history'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 화면으로 이동'
-Mobile.verifyElementText(findTestObject('05_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 접수 취소 안내 문구 노출'
-Mobile.verifyElementText(findTestObject('05_receipt_history/txt_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 병원명 노출'
-Mobile.verifyElementText(findTestObject('05_receipt_history/txt_hospital_name'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_hospital_name'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 병원명 노출'
-Mobile.verifyElementText(findTestObject('05_receipt_history/txt_hospital_name'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_hospital_name'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 [바로접수] 버튼 노출'
 Mobile.verifyElementText(findTestObject('00_common/btn_tvCommonButtonView'), '바로접수', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 메뉴 선택'
-Mobile.tap(findTestObject('04_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면으로 이동, 개인화 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('04_home/area_vp_progress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('03_home/area_vp_progress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '최근앱 삭제'
 AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
 driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
-Mobile.tap(findTestObject('00_common_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)

@@ -26,27 +26,27 @@ Mobile.swipe(45, 2000, 45, 500)
 Mobile.swipe(45, 2000, 45, 500)
 
 '애플리케이션'
-Mobile.tap(findTestObject('00_common_data_delete/txt_textview', [('text') : '애플리케이션']), 2)
+Mobile.tap(findTestObject('00_data_delete/txt_textview', [('text') : '애플리케이션']), 2)
 
 Mobile.delay(1)
 
 '검색'
-Mobile.tap(findTestObject('00_common_data_delete/btn_search'), 10)
+Mobile.tap(findTestObject('00_data_delete/btn_search'), 10)
 
 '똑닥 검색'
-Mobile.setText(findTestObject('00_common_data_delete/input_search'), '똑닥 테스트', 2)
+Mobile.setText(findTestObject('00_data_delete/input_search'), '똑닥 테스트', 2)
 
 '똑닥 선택'
-Mobile.tap(findTestObject('00_common_data_delete/txt_title', [('text') : '똑닥 테스트']), 2)
+Mobile.tap(findTestObject('00_data_delete/txt_title', [('text') : '똑닥 테스트']), 2)
 
 '저장공간'
-Mobile.tap(findTestObject('00_common_data_delete/txt_title', [('text') : '저장공간']), 2)
+Mobile.tap(findTestObject('00_data_delete/txt_title', [('text') : '저장공간']), 2)
 
 '데이터삭제'
-Mobile.tap(findTestObject('00_common_data_delete/btn_data_delete'), 2)
+Mobile.tap(findTestObject('00_data_delete/btn_data_delete'), 2)
 
-if(Mobile.waitForElementPresent(findTestObject('00_common_data_delete/btn_delete'), 2) == true)
+if(Mobile.waitForElementPresent(findTestObject('00_data_delete/btn_delete'), 2) == true)
 {
 '삭제'
-Mobile.tap(findTestObject('00_common_data_delete/btn_delete'), 2)
+Mobile.tap(findTestObject('00_data_delete/btn_delete'), 2)
 }
