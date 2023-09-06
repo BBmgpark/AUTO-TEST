@@ -29,43 +29,7 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-//로그아웃
-'STEP - 로그인 상태인 경우 로그아웃 진행'
-if (Mobile.waitForElementNotPresent(findTestObject('03_home/btn_login'), GlobalVariable.fixedTime))
-{
-	'STEP - [마이페이지] 메뉴 선택'
-	Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'STEP - [수정] 버튼 선택'
-	Mobile.tap(findTestObject('05_mypage/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'STEP - [로그아웃] 버튼 선택'
-	Mobile.tap(findTestObject('05_mypage/btn_logout'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'STEP - 로그아웃 [확인] 버튼 선택'
-	Mobile.tap(findTestObject('05_mypage/btn_logout_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'STEP - [홈] 메뉴 선택'
-	Mobile.tap(findTestObject('03_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-}
-//
-
-//이메일 계정 로그인 (qa20@qa.com)
-'STEP - 홈 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('03_home/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-'STEP - [이메일 로그인] 버튼 선택'
-Mobile.tap(findTestObject('01_onboarding/btn_tvEmailLoginBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-	
-'STEP - 이메일 id 입력'
-Mobile.setText(findTestObject('02_login/input_etEmail'), GlobalVariable.email_id, GlobalVariable.fixedTime)
-	
-'STEP - 이메일 password 입력'
-Mobile.setText(findTestObject('02_login/input_etPassword'), GlobalVariable.email_password, GlobalVariable.fixedTime)
-	
-'STEP - [로그인하기] 버튼 선택'
-Mobile.tap(findTestObject('02_login/btn_tvLoginConfirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
+Mobile.delay(2)
 
 //주소설정 화면 진입		
 'STEP - 홈 주소이름 선택'
@@ -126,7 +90,7 @@ Mobile.verifyElementVisible(findTestObject('06_adress_setting/txt_different_adre
 Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/txt_home_adress_name'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주소 설정 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE) 
@@ -140,7 +104,7 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 편�
 '[삭제] 버튼이 노출되면 주소 삭제'
 while(true)
 {
-if(Mobile.waitForElementPresent(findTestObject('06_adress_setting/btn_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE))
+if(Mobile.waitForElementPresent(findTestObject('06_adress_setting/btn_delete'), 5, FailureHandling.CONTINUE_ON_FAILURE))
 {
 	'STEP - [삭제] 버튼 선택'
 	Mobile.tap(findTestObject('06_adress_setting/btn_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -177,11 +141,10 @@ Mobile.verifyElementNotVisible(findTestObject('06_adress_setting/txt_max_adress_
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
 Mobile.verifyElementVisible(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //검색 바
 //
 
-'최근앱 삭제'
-AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
-Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 앱 종료'
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+driver.terminateApp('com.bbros.sayup.debug')

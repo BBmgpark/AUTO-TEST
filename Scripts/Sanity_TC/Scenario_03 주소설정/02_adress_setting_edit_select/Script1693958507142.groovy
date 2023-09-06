@@ -30,7 +30,7 @@ Mobile.startExistingApplication(GlobalVariable.appid)
 
 //주소 편집
 'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/txt_home_adress_name'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주소 설정 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
@@ -102,7 +102,7 @@ Mobile.verifyElementText(findTestObject('06_adress_setting/txt_adress'), '경기
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
 Mobile.verifyElementVisible(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //검색 바
 
 'STEP - 마이페이지 메뉴 선택'
@@ -156,23 +156,11 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설�
 Mobile.verifyElementText(findTestObject('06_adress_setting/txt_adress'), GlobalVariable.my_adress, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
-//주소 목록 선택 - 현위치 선택
-'STEP - 주소설정 화면 [현위치에서 병원 찾기] 버튼 선택'
-Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-'기대결과 - 홈 화면으로 이동, 주소이름 {현위치} 노출'
-Mobile.verifyElementText(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.adress_name, FailureHandling.CONTINUE_ON_FAILURE)
-//
-
 //주소 목록 선택 - 우리집 선택
-'STEP - 홈 주소이름 영역 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-'기대결과 - 주소 설정 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
-
 'STEP - 주소설정 화면 [우리집] 선택'
 Mobile.tap(findTestObject('06_adress_setting/btn_my_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2)
 
 '기대결과 - 홈 화면으로 이동, 주소이름 {우리집} 노출'
 Mobile.verifyElementText(findTestObject('03_home/txt_home_adress_name'), '우리집', FailureHandling.CONTINUE_ON_FAILURE)
@@ -216,16 +204,31 @@ if(Mobile.waitForElementNotPresent(findTestObject('06_adress_setting/btn_differe
 	Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-Mobile.delay(2)
-
 'STEP - 주소이름 {TEST} 선택'
-Mobile.tap(findTestObject('06_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('06_adress_setting/btn_different_adress_name'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2)
 
 '기대결과 - 홈 화면으로 이동, 주소이름 {TEST} 노출'
 Mobile.verifyElementText(findTestObject('03_home/txt_home_adress_name'), 'TEST', FailureHandling.CONTINUE_ON_FAILURE)
 //
 
-'최근앱 삭제'
-AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
-Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+//주소 목록 선택 - 현위치 선택
+'STEP - 홈 주소이름 선택'
+Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 주소 설정 화면으로 이동'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 주소설정 화면 [현위치에서 병원 찾기] 버튼 선택'
+Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2)
+
+'기대결과 - 홈 화면으로 이동되고 주소이름 {현위치} 노출'
+Mobile.verifyElementText(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.adress_name, FailureHandling.CONTINUE_ON_FAILURE)
+//
+
+'STEP - 앱 종료'
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+driver.terminateApp('com.bbros.sayup.debug')
