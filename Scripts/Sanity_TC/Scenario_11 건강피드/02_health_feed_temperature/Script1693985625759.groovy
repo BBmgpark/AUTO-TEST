@@ -27,7 +27,7 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 마이페이지 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_mypage'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 건강피드 선택'
 Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -35,11 +35,11 @@ Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTim
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
 
-//AUTO-61
+//아들
 'STEP - 자녀 필터 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_child_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - 추가된 자녀 선택'
+'STEP - 자녀 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : GlobalVariable.son]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 //체온 등록 (정상)
@@ -160,7 +160,6 @@ Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_temperature_state')
 'STEP - [<-] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'최근앱 삭제'
-AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
-driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
-Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 앱 종료'
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+driver.terminateApp('com.bbros.sayup.debug')
