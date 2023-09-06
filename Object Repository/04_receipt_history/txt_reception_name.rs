@@ -3,7 +3,7 @@
    <description>진료내역 > 목록 > 가족 이름</description>
    <name>txt_reception_name</name>
    <tag></tag>
-   <elementGuidId>35f3ce7b-a6b9-4467-93f1-bbe4eaade28d</elementGuidId>
+   <elementGuidId>b53e5689-10cd-4020-a61b-6bb265b43cf5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/iv_reception_user_name</value>
-      <webElementGuid>7ba033f1-9ac8-48eb-a7c5-3b443e313975</webElementGuid>
+      <value>com.bbros.sayup.debug:id/iv_reception_user_name</value>
+      <webElementGuid>e51793df-64ec-4ee5-9ab6-7c6328158890</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>287891f9-af45-43df-a68c-a26c0af5b444</webElementGuid>
+      <webElementGuid>1dc6b4ea-8b1d-42c6-8e1b-d3ef02875cbb</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/iv_reception_user_name' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/iv_reception_user_name' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
