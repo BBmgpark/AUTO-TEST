@@ -166,7 +166,7 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/btn_question_close'),
 
 '기대결과 - 예약이 완료되고, 홈 화면으로 이동'
 Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈
-Mobile.verifyElementVisible(findTestObject('03_home/area_vp_progress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //영역
+Mobile.verifyElementVisible(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //영역
 Mobile.verifyElementText(findTestObject('03_home/txt_tvHospitalTitle'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //병원명
 
 //예약취소

@@ -93,7 +93,7 @@ Mobile.verifyElementText(findTestObject('00_common/btn_tvCommonButtonView'), '�
 Mobile.tap(findTestObject('03_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면에 개인화 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('03_home/area_vp_progress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '등록한 {아들} 자녀 삭제'
 Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //마이페이지

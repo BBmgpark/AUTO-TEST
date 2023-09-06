@@ -252,7 +252,7 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/btn_question_close'),
 Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 개인화 영역 노출'
-Mobile.verifyElementVisible(findTestObject('03_home/area_vp_progress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //영역
+Mobile.verifyElementVisible(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //영역
 Mobile.verifyElementText(findTestObject('03_home/txt_tvHospitalTitle'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //병원명
 
 'STEP - 개인화 영역 선택'
