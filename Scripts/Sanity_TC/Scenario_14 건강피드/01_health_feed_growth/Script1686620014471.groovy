@@ -28,7 +28,7 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 마이페이지 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_menu_mypage'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 건강피드 선택'
 Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -36,11 +36,51 @@ Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTim
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
 
+//AUTO-61
 'STEP - 자녀 필터 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_child_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-//아들
-'STEP - 자녀 선택' 
+'STEP - 자녀추가 선택'
+Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : '자녀추가 (12세 미만)']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 자녀추가 화면으로 이동'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '자녀추가', FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 자녀 이름 입력'
+Mobile.setText(findTestObject('11_family/input_add_family_name'), GlobalVariable.son, GlobalVariable.fixedTime)
+
+'STEP - 주민번호 앞자리 입력'
+Mobile.setText(findTestObject('11_family/input_add_ssn_front_number'), GlobalVariable.son_birth_date, GlobalVariable.fixedTime)
+
+'STEP - 주민번호 뒷자리 영역 선택'
+Mobile.tap(findTestObject('11_family/input_add_ssn_back_number'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
+
+'STEP - 주민번호 뒷자리 입력'
+for(i = 1; i <= 7; i++)
+{
+	Mobile.tap(findTestObject('11_family/btn_keypad_number_3'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+}
+
+'스크롤 이동'
+Mobile.scrollToText('고유식별정보의 수집 및 이용 동의')
+
+'STEP - 자녀 대리 접수 동의 체크 선택'
+Mobile.tap(findTestObject('11_family/btn_add_use', [('text') : '자녀 대리 접수 동의']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 고유식별정보의 수집 및 이용 동의 체크 선택'
+Mobile.tap(findTestObject('11_family/btn_add_use', [('text') : '고유식별정보의 수집 및 이용 동의']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - [완료] 버튼 선택'
+Mobile.tap(findTestObject('11_family/btn_add_complet'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 건강피드 화면으로 이동'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
+//
+
+'STEP - 자녀 필터 선택'
+Mobile.tap(findTestObject('13_healthy_feed/txt_child_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 추가된 자녀 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : GlobalVariable.son]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 //건강피드 TAB에서 키 등록
@@ -194,6 +234,7 @@ Mobile.verifyElementVisible(findTestObject('13_healthy_feed/txt_height_weight', 
 'STEP - [<-] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - 앱 종료'
-AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-driver.terminateApp('com.bbros.sayup.debug')
+'최근앱 삭제'
+AndroidDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+driver.pressKey(new KeyEvent(AndroidKey.APP_SWITCH))
+Mobile.tap(findTestObject('00_data_delete/btn_all_delete'), 2, FailureHandling.CONTINUE_ON_FAILURE)
