@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'박명근'</initValue>
+      <initValue>'자동화'</initValue>
       <name>user_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
