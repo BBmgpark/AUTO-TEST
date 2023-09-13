@@ -58,14 +58,12 @@ Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, Fa
 '기대결과 - 홈 화면으로 이동'
 Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)// 홈메뉴(활성화)
 
-//똑닥 엄마들 추천
-'STEP - {똑닥 엄마들 추천} 컨텐츠 선택'
+//추천 - 복약관리
+'STEP - 추천 컨텐츠 선택'
 Mobile.tap(findTestObject('03_home/02_contents/img_mom_recommend'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 검색 화면 노출'
-Mobile.verifyElementText(findTestObject('08_search/input_search'), '똑닥 엄마들 추천 병원', FailureHandling.CONTINUE_ON_FAILURE) //검색어
-Mobile.verifyElementText(findTestObject('08_search/txt_sort_type'), '거리순', FailureHandling.CONTINUE_ON_FAILURE) //sort 타입
-Mobile.verifyElementVisible(findTestObject('08_search/txt_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //병원명
+'기대결과 - 복약 관리 화면으로 이동된다.'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '복약 관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
