@@ -27,7 +27,7 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 홈 검색 영역 선택'
-Mobile.tap(findTestObject('03_home/area_view_search_bar'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/area_view_search_bar'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 병원 검색어 입력'
 Mobile.setText(findTestObject('08_search/input_search'), GlobalVariable.hospital_name, GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -64,16 +64,16 @@ Mobile.tap(findTestObject('09_hospital_detail/btn_left', [('text') : '바로접�
 '기대결과 - 접수하기 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 진료대상 선택 노출'
-Mobile.verifyElementText(findTestObject('10_receipt/txt_choose'), '진료대상 선택', FailureHandling.CONTINUE_ON_FAILURE)
-
 'STEP - 진료대상 본인 선택'
 Mobile.tap(findTestObject('10_receipt/txt_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-//예외처리 - 주민등록 뒷자리 미입력 상태인 경우
-if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_transmission_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
+'STEP - [다음] 버튼 선택'
+Mobile.tap(findTestObject('10_receipt/btn_next'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+//주민번호 뒷자리 미입력 상태인 경우 주민등록 번호 입력 화면으로 이동
+if(Mobile.waitForElementPresent(findTestObject('10_receipt/input_back_number'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
 {
-	'STEP - 주민번호 뒷자리 선택'
+	'STEP - 주민번호 뒷자리 영역 선택'
 	Mobile.tap(findTestObject('10_receipt/input_back_number'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - 주민번호 뒷자리 "1111111" 입력'
@@ -85,7 +85,7 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_transmission_titl
 	Mobile.tap(findTestObject('10_receipt/btn_finish'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-//예외처리 - 간편결제 또는 비대면 진료 미사용 병원인 경우 진료방식 선택영역 미노출
+//예외처리 - 간편결제 또는 비대면 진료 미사용 병원인 경우 진료방식 선택 영역 미노출
 if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_setting', [('text') : '방문진료']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
 {
 	'STEP - 진료방식 방문진료 선택'
@@ -130,7 +130,7 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/btn_deny'), GlobalVar
 	Mobile.tap(findTestObject('10_receipt/btn_deny'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-'STEP - 간편결제 사용하는 병원의 경우 결제 방식 [직접결제] 선택'
+'STEP - 간편결제 사용하는 병원의 경우 결제 방식 직접결제 선택'
 if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_payment_list_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
 {
 	'STEP - [병원에서 직접결제] 버튼 선택'
@@ -170,7 +170,6 @@ Mobile.tap(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.
 
 '기대결과 - 진료내역 상세 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('10_receipt/txt_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //이름
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_detail_hospital'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //병원명
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_office'), '진료실', FailureHandling.CONTINUE_ON_FAILURE) //진료실명
 

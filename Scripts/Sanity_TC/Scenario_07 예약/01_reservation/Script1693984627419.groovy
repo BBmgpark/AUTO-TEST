@@ -28,7 +28,7 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 검색 영역 선택'
-Mobile.tap(findTestObject('03_home/area_view_search_bar'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/area_view_search_bar'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 병원 검색어 입력'
 Mobile.setText(findTestObject('08_search/input_search'), GlobalVariable.hospital_name, GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -54,7 +54,7 @@ Mobile.tap(findTestObject('10_receipt/btn_reservation'), GlobalVariable.fixedTim
 }
 
 '건강검진 미사용 병원인 경우'
-if(Mobile.waitForElementPresent(findTestObject('09_hospital_detail/btn_right', [('text') : '시간예약']), 5, FailureHandling.CONTINUE_ON_FAILURE) == true)
+if(Mobile.waitForElementPresent(findTestObject('09_hospital_detail/btn_right', [('text') : '시간예약']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
 {
 'STEP - [시간예약] 버튼 선택'
 Mobile.tap(findTestObject('09_hospital_detail/btn_right', [('text') : '시간예약']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -79,6 +79,9 @@ if(Mobile.waitForElementPresent(findTestObject('00_common/btn_confirmBtn'), Glob
 {
 	Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
+
+'STEP - [다음] 버튼 선택'
+Mobile.tap(findTestObject('10_receipt/btn_next'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 간편결제 또는 비대면 진료 사용 병원인 경우 진료방식 선택'
 if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_setting', [('text') : '방문진료']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
@@ -112,8 +115,8 @@ if(Mobile.waitForElementPresent(findTestObject('00_common/txt_tvTitle', [('text'
 	Mobile.tap(findTestObject('00_common/txt_tvConfirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-'STEP - [날짜/시간 선택] 버튼 선택'
-Mobile.tap(findTestObject('10_receipt/btn_date_time_select'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - [다음] 버튼 선택'
+Mobile.tap(findTestObject('10_receipt/btn_next'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(2)
 
@@ -135,8 +138,8 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_tv_reservation_ti
 'STEP - 예약 시간 선택'
 Mobile.tap(findTestObject('10_receipt/txt_reservation_minute'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'예약 날짜 시간 저장'
-reservation = Mobile.getText(findTestObject('10_receipt/txt_reservation_time'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//'예약 날짜 시간 저장'
+//reservation = Mobile.getText(findTestObject('10_receipt/txt_reservation_time'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [다음] 버튼 선택'
 Mobile.tap(findTestObject('10_receipt/btn_next'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
