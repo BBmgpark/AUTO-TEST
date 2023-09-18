@@ -15,6 +15,11 @@
       <name>fixedTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
+      <initValue>10</initValue>
+      <name>waitTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>apk path</description>
       <initValue>'C:\\apk\\app.apk'</initValue>
       <name>apk</name>
