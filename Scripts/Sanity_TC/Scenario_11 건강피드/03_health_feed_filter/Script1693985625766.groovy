@@ -27,10 +27,12 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 마이페이지 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_menu_mypage'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 건강피드 선택'
 Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
@@ -46,11 +48,15 @@ Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : Gl
 'STEP - 보기 필터 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_filter'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 피드 필터 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '피드 필터', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 성장 (키, 몸무게) 옵션 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : '성장 (키, 몸무게)']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 키/몸무게 피드 목록 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/btn_filter'), '성장 (키, 몸무게)', FailureHandling.CONTINUE_ON_FAILURE) //보기 필터
@@ -65,6 +71,8 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_filter'), GlobalVariable.fixedTim
 'STEP - 체온 (체온, 해열제) 옵션 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : '체온 (체온, 해열제)']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 체온 피드 목록 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/btn_filter'), '체온 (체온, 해열제)', FailureHandling.CONTINUE_ON_FAILURE) //보기 필터
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/txt_feed_title', [('text') : '39 ℃']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -78,6 +86,8 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_filter'), GlobalVariable.fixedTim
 
 'STEP - 성장 이벤트 옵션 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_filter_list_name', [('text') : '성장 이벤트']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 보기 필터 "성장 이벤트" 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/btn_filter'), '성장 이벤트', FailureHandling.CONTINUE_ON_FAILURE)

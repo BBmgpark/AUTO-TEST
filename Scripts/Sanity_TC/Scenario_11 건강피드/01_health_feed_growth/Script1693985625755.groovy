@@ -28,10 +28,12 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 마이페이지 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_menu_mypage'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 건강피드 선택'
 Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
@@ -50,11 +52,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [키 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '키 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 성장관리 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 키 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 키 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '키 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -65,11 +71,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '50', GlobalVaria
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 키 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '50cm', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 성장관리 tab 화면 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
@@ -87,11 +97,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [키 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '키 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 성장관리 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 키 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 키 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '키 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -102,11 +116,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '60', GlobalVaria
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 키 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '60cm', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면 성장관리 tab 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
@@ -127,11 +145,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [몸무게 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '몸무게 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 성장관리 화면 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 몸무게 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 몸무게 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '몸무게 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -142,11 +164,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '5', GlobalVariab
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 몸무게 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '5kg', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 성장관리 tab에 등록한 몸무게 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
@@ -162,11 +188,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [몸무게 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '몸무게 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 성장관리 화면 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 몸무게 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 몸무게 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '몸무게 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -177,11 +207,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '10', GlobalVaria
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 몸무게 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '10kg', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 성장관리 tab에 등록한 몸무게 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title

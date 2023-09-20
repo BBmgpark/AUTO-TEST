@@ -26,7 +26,8 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-Mobile.delay(2)
+'기대결과 - 홈 화면으로 이동된다.'
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 //검색
 'STEP - 현재 설정되어있는 주소 이름 저장'
@@ -34,8 +35,6 @@ home_adress_name = Mobile.getText(findTestObject('03_home/txt_home_adress_name')
 
 'STEP - 홈 검색 영역 선택'
 Mobile.tap(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.delay(2)
 
 'STEP - 진료과 검색어 입력'
 Mobile.setText(findTestObject('08_search/input_search'), '소아청소년과', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -45,6 +44,8 @@ Mobile.tap(findTestObject('08_search/btn_search'), GlobalVariable.fixedTime, Fai
 	
 'STEP - 검색 결과 첫번째 리스트 선택'
 Mobile.tap(findTestObject('08_search/btn_result_plus'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 	
 '기대결과 - 검색 영역에 검색어가 노출된다.'
 Mobile.verifyElementText(findTestObject('08_search/input_search'), '소아청소년과', FailureHandling.CONTINUE_ON_FAILURE)
@@ -62,6 +63,8 @@ Mobile.tap(findTestObject('08_search/txt_sort_filter_distance'), GlobalVariable.
 'STEP - [필터 적용] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 거리순으로 필터가 적용된다.'
 Mobile.verifyElementText(findTestObject('08_search/txt_sort_type'), '거리순', FailureHandling.CONTINUE_ON_FAILURE)
 	
@@ -74,13 +77,13 @@ Mobile.verifyElementVisible(findTestObject('08_search/txt_main_medical_departmen
 'STEP - 주소 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_searchRegionBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 주소 설정 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [현위치에서 병원 찾기] 버튼 선택'
-Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 검색 화면 주소 이름 현위치가 노출된다.'
 if(GlobalVariable.adress_name == '상동')
@@ -107,11 +110,13 @@ else if(GlobalVariable.adress_name == '여의도동')
 	Mobile.tap(findTestObject('08_search/txt_search_adress_name', [('text') : '여의도동']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
+Mobile.delay(3)
+
 '기대결과 - 주소 설정 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
 	
 'STEP - [우리집] 선택'
-Mobile.tap(findTestObject('06_adress_setting/btn_my_home'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('06_adress_setting/btn_my_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 검색 화면 주소 이름에 우리집이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('08_search/txt_search_adress_name', [('text') : '우리집']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -124,42 +129,46 @@ Mobile.verifyElementVisible(findTestObject('08_search/txt_main_medical_departmen
 'STEP - 주소 이름 선택'
 Mobile.tap(findTestObject('08_search/txt_search_adress_name', [('text') : '우리집']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 주소 설정 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 추가된 주소가 없는 경우 주소 추가'
-if(Mobile.waitForElementNotPresent(findTestObject('06_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE))
+if(Mobile.waitForElementNotPresent(findTestObject('06_adress_setting/btn_different_adress_name'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
 {
 	'STEP - [다른 위치에서 병원 찾기] 버튼 선택'
-	Mobile.tap(findTestObject('06_adress_setting/btn_different_location'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('06_adress_setting/btn_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'기대결과 - 주소 검색하기 타이틀 노출'
 	Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 검색하기', FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - 주소 입력'
-	Mobile.setText(findTestObject('06_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime)
+	Mobile.setText(findTestObject('06_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - [검색] 버튼 선택'
-	Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - 도로명 주소 선택'
-	Mobile.tap(findTestObject('06_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('06_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	Mobile.delay(3)
 	
 	'기대결과 - 상세주소 입력 타이틀이 노출된다.'
 	Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - 상세주소 입력'
-	Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime)
+	Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - 주소이름 입력'
-	Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_name'), 'TEST', GlobalVariable.fixedTime)
+	Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_name'), 'TEST', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - [등록] 버튼 선택'
-	Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 	
 'STEP - 주소이름 {TEST} 선택'
-Mobile.tap(findTestObject('06_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('06_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 검색 화면에 {TEST} 주소 이름이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('08_search/txt_search_adress_name', [('text') : 'TEST']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

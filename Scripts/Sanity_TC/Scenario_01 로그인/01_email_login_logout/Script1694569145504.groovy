@@ -32,9 +32,7 @@ Mobile.callTestCase(findTestCase('Sanity_TC/Scenario_00 데이터삭제/00_data_
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-Mobile.delay(2)
-
-'STEP - [확인] 버튼 선택'
+'STEP - 똑닥 권한안내 화면 [확인] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
@@ -92,7 +90,7 @@ if (Mobile.waitForElementPresent(findTestObject('03_home/01_home_popup/btn_skip'
 }
 
 '기대결과 - 홈 화면으로 이동된다.'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP- [마이페이지] 메뉴 선택'
 Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -112,6 +110,8 @@ Mobile.tap(findTestObject('05_mypage/btn_logout'), GlobalVariable.fixedTime, Fai
 'STEP - 로그아웃 [확인] 버튼 선택'
 Mobile.tap(findTestObject('05_mypage/btn_logout_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 로그아웃 상태 마이페이지 노출'
 Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), '마이페이지', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
 Mobile.verifyElementVisible(findTestObject('05_mypage/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[로그인]
@@ -127,6 +127,8 @@ Mobile.verifyElementVisible(findTestObject('02_login/btn_ivClose'), GlobalVariab
 
 'STEP - 로그인 화면 [x] 버튼 선택'
 Mobile.tap(findTestObject('02_login/btn_ivClose'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 마이페이지 화면으로 이동'
 Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), '마이페이지', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
@@ -157,8 +159,4 @@ Mobile.verifyElementVisible(findTestObject('05_mypage/btn_edit'), GlobalVariable
 'STEP - 앱 종료'
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 driver.terminateApp('com.bbros.sayup.debug')
-
-
-
-
 

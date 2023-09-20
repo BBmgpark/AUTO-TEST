@@ -3,7 +3,7 @@
    <description>예약 > 날짜 선택 > 예약 시간</description>
    <name>txt_reservation_time</name>
    <tag></tag>
-   <elementGuidId>2420736f-8aef-4c4b-9d90-694f28067072</elementGuidId>
+   <elementGuidId>e94d62b4-26b0-494b-9805-ad2ba325f402</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tvSummary</value>
-      <webElementGuid>44bc27f7-cf79-48e3-87f6-7f632788c028</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_summary_selected_date</value>
+      <webElementGuid>d67b8ac4-3ab7-48a1-84d4-3f55a5d07aa1</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvSummary']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_summary_selected_date']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
