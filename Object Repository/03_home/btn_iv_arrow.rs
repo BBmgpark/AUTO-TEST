@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>주소 검색하기 > 주소 입력</description>
-   <name>input_adress_search_adress</name>
+   <description>홈 > 주소이름 [v]</description>
+   <name>btn_iv_arrow</name>
    <tag></tag>
-   <elementGuidId>081e273d-a4b2-4492-afe8-413d27e43983</elementGuidId>
+   <elementGuidId>e633c558-cb43-4077-b232-8ad1949c78da</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>region_name</value>
-      <webElementGuid>8fa236ae-0afe-4432-883a-84c0cd20a08a</webElementGuid>
+      <value>com.bbros.sayup.debug:id/iv_arrow</value>
+      <webElementGuid>1448c6fb-2f57-49fe-9c97-6a7f62101499</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'region_name']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/iv_arrow']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

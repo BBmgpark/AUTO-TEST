@@ -26,7 +26,7 @@ Mobile.swipe(45, 2000, 45, 500)
 Mobile.swipe(45, 2000, 45, 500)
 
 '애플리케이션'
-Mobile.tap(findTestObject('00_data_delete/txt_textview', [('text') : '애플리케이션']), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('00_data_delete/txt_title', [('text') : '애플리케이션']), GlobalVariable.fixedTime)
 
 '검색'
 Mobile.tap(findTestObject('00_data_delete/btn_search'), GlobalVariable.fixedTime)

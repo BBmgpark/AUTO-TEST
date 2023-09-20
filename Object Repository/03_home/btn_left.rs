@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>설정 > 애플리케이션</description>
-   <name>txt_textview</name>
+   <description>홈 개인화 > 왼쪽 버튼</description>
+   <name>btn_left</name>
    <tag></tag>
-   <elementGuidId>28986507-cfcb-44b5-a60b-1183e6301eb4</elementGuidId>
+   <elementGuidId>ef4dd7a5-1dac-4c44-8d94-1353f294ef47</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>resource_id</name>
       <type>Main</type>
-      <value>android.widget.TextView</value>
-      <webElementGuid>b0d73ad9-2f3a-4517-8a74-e39fe99b5fc9</webElementGuid>
+      <value>com.bbros.sayup.debug:id/btn_left</value>
+      <webElementGuid>65e6511a-7bd3-4ce0-a577-b1bacf76fd92</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>0a8b6b2a-3cea-4722-a840-1cd3346fc7ef</webElementGuid>
+      <webElementGuid>8f79bb33-f8fb-4840-830b-95010690559c</webElementGuid>
    </webElementProperties>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource_id = 'com.bbros.sayup.debug:id/btn_left' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

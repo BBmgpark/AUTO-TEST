@@ -3,7 +3,7 @@
    <description>홈 > 주소 이름 영역</description>
    <name>txt_home_adress_name</name>
    <tag></tag>
-   <elementGuidId>67b2bcc2-d434-49b5-9d73-a9d047dd81b7</elementGuidId>
+   <elementGuidId>53e4a0e8-1147-44fd-866b-1a10ac2551b0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,8 +12,16 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup.debug:id/tv_title</value>
-      <webElementGuid>b9e6bf09-1c1d-42f8-87b1-35fc6288dae8</webElementGuid>
+      <webElementGuid>b4f16a10-723c-4ffa-b169-fb243ae031db</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title']</locator>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>index</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>26b14e68-8f54-4833-9664-0581b2ab3c3f</webElementGuid>
+   </webElementProperties>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title' and @index = '1']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
