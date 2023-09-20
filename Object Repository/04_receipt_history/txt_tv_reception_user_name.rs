@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>진료내역 > 목록 > 가족 이름</description>
-   <name>txt_reception_name</name>
+   <description>진료내역 > 본인 이름</description>
+   <name>txt_tv_reception_user_name</name>
    <tag></tag>
-   <elementGuidId>f52e6571-54ed-4e48-a90e-aab7db718d52</elementGuidId>
+   <elementGuidId>892c5a2d-1447-4728-8c1d-18e97336aaf6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/iv_reception_user_name</value>
-      <webElementGuid>02d65822-8ef2-4d25-8180-5bc6e5c2f7cc</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tv_reception_user_name</value>
+      <webElementGuid>4a8d8ef1-7faf-43c6-9cec-cde5890b1cd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>${text}</value>
-      <webElementGuid>459cc4da-1c9e-443e-ba99-a42e159be4dc</webElementGuid>
+      <webElementGuid>012dce4f-6587-4c9e-ba97-0a90ad35f445</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/iv_reception_user_name' and (@text = '${text}' or . = '${text}')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_reception_user_name' and (@text = '${text}' or . = '${text}')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -82,13 +82,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>16ba129c-3c4b-479b-87b5-ef47df8333d4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Sanity_TC/Scenario_09 이벤트/01_event_vote</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>a452318d-9f58-44f4-a3bd-826835beeba1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
