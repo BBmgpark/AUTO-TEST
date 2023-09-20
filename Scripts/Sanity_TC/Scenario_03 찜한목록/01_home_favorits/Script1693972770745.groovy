@@ -91,6 +91,15 @@ Mobile.verifyElementVisible(findTestObject('07_favorits/txt_hospital_name', [('t
 //즐겨찾기 해제
 'STEP - 찜한목록 리스트 선택'
 Mobile.tap(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+if(Mobile.waitForElementNotPresent(findTestObject('09_hospital_detail/btn_favorits'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
+{
+	'STEP - 병원상세 뒤로가기 [<-] 버튼 선택'
+	Mobile.tap(findTestObject('00_common/btn_webview_back'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'STEP - 찜한목록 리스트 선택'
+	Mobile.tap(findTestObject('07_favorits/txt_hospital_name', [('text') : GlobalVariable.hospital_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+}
 	
 'STEP - [☆]  즐겨찾기 버튼 선택(해제)'
 Mobile.tap(findTestObject('09_hospital_detail/btn_favorits'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

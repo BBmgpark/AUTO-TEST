@@ -127,7 +127,7 @@ Mobile.tap(findTestObject('06_adress_setting/txt_adress_road_name'), GlobalVaria
 Mobile.delay(3)
 
 '기대결과 - 상세주소 입력 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.STOP_ON_FAILURE, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.STOP_ON_FAILURE)
 
 'STEP - 상세주소 입력'
 Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime)

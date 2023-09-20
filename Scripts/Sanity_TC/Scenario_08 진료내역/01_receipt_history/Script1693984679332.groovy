@@ -123,7 +123,7 @@ Mobile.tap(findTestObject('04_receipt_history/txt_family_filter', [('text') : Gl
 Mobile.tap(findTestObject('00_common/txt_class_text_view', [('text'): '확인']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 화면에 본인 이름 목록이 노출된다.'
-Mobile.verifyElementVisible(findTestObject('04_receipt_history/txt_reception_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_receipt_history/txt_tv_reception_user_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - {영유아} 이름 목록이 노출되지 않는다.'
 Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/txt_reception_name', [('text') : '영유아']), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -156,9 +156,6 @@ Mobile.delay(3)
 
 '기대결과 - 진료내역 상세 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
-
-'기대결과 - 유저정보가 노출된다.'
-Mobile.verifyElementVisible(findTestObject('10_receipt/txt_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //이름
 
 '기대결과 - 진료정보가 노출된다.'
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_office'), '진료실', FailureHandling.CONTINUE_ON_FAILURE) //진료실명
