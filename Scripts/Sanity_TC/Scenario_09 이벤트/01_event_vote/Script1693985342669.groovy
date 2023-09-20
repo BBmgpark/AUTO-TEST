@@ -33,7 +33,7 @@ Mobile.verifyElementVisible(findTestObject('12_event_vote/txt_page_event'), Glob
 Mobile.tap(findTestObject('12_event_vote/btn_tab_vote'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 투표 화면 노출'
-if(Mobile.waitForElementPresent(findTestObject('12_event_vote/btn_vote'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
+if(Mobile.waitForElementPresent(findTestObject('12_event_vote/btn_vote'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
 {
 	Mobile.verifyElementNotVisible(findTestObject('12_event_vote/area_progressbar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }

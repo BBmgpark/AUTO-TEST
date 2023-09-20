@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>고정된 시간</description>
-      <initValue>5</initValue>
+      <initValue>10</initValue>
       <name>fixedTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>10</initValue>
+      <initValue>4</initValue>
       <name>waitTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -11,8 +11,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>고정된 시간</description>
-      <initValue>3</initValue>
+      <initValue>10</initValue>
       <name>fixedTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>4</initValue>
+      <name>waitTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>apk path</description>
@@ -98,10 +103,5 @@
       <description>가족관리 화면 </description>
       <initValue>'2023년 03월 01일 (남)'</initValue>
       <name>son_info</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>10</initValue>
-      <name>waitTime</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

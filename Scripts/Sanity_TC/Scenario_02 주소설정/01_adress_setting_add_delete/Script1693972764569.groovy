@@ -29,8 +29,6 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-Mobile.delay(2)
-
 //주소설정 화면 진입		
 'STEP - 홈 주소이름 선택'
 Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -42,10 +40,12 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설�
 
 //주소 등록
 '주소 등록 가능한 상태면 주소 등록'
-if (Mobile.waitForElementPresent(findTestObject('06_adress_setting/btn_different_location'), GlobalVariable.fixedTime) == true)	
+if (Mobile.waitForElementPresent(findTestObject('06_adress_setting/btn_different_location'), GlobalVariable.waitTime) == true)	
 {
 'STEP - [다른 위치에서 병원 찾기] 버튼 선택'
 Mobile.tap(findTestObject('06_adress_setting/btn_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 	
 '기대결과 - 주소 검색하기 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 검색하기', FailureHandling.CONTINUE_ON_FAILURE)
@@ -61,6 +61,8 @@ Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable
 	
 'STEP - 도로명 주소 선택'
 Mobile.tap(findTestObject('06_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 	
 '기대결과 - 상세주소 입력 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -79,6 +81,8 @@ Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_name
 Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
+Mobile.delay(3)
+
 '기대결과 - 주소설정 화면으로 이동, 등록된 주소 정보 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
 Mobile.verifyElementVisible(findTestObject('06_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //주소이름
@@ -90,7 +94,9 @@ Mobile.verifyElementVisible(findTestObject('06_adress_setting/txt_different_adre
 Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 주소 설정 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE) 
@@ -98,16 +104,20 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설�
 'STEP - [편집] 버튼 선택'
 Mobile.tap(findTestObject('06_adress_setting/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 주소 편집 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 편집', FailureHandling.CONTINUE_ON_FAILURE)
 
 '[삭제] 버튼이 노출되면 주소 삭제'
 while(true)
 {
-if(Mobile.waitForElementPresent(findTestObject('06_adress_setting/btn_delete'), 5, FailureHandling.CONTINUE_ON_FAILURE))
+if(Mobile.waitForElementPresent(findTestObject('06_adress_setting/btn_delete'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
 {
 	'STEP - [삭제] 버튼 선택'
 	Mobile.tap(findTestObject('06_adress_setting/btn_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	Mobile.delay(3)
 		
 	'기대결과 - 삭제 확인 팝업 노출'
 	Mobile.verifyElementText(findTestObject('00_common/txt_messageTxt'), '저장된 주소를 삭제하시겠습니까?', FailureHandling.CONTINUE_ON_FAILURE)
@@ -122,10 +132,12 @@ else
 }
 
 '기대결과 - 삭제한 주소 정보 미노출'
-Mobile.verifyElementNotVisible(findTestObject('06_adress_setting/txt_edit_address_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('06_adress_setting/txt_edit_address_name'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 주소 설정 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
@@ -136,14 +148,12 @@ Mobile.verifyElementVisible(findTestObject('06_adress_setting/btn_different_loca
 Mobile.verifyElementNotVisible(findTestObject('06_adress_setting/txt_max_adress_guide'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //안내문구
 //
 
-//홈
 'STEP - 뒤로가기 [<-] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
 Mobile.verifyElementVisible(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //검색 바
-//
 
 'STEP - 앱 종료'
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()

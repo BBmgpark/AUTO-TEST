@@ -26,12 +26,10 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-Mobile.delay(2)
-
 'STEP - 홈 [가족관리] 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_family'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_family'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 가족관리 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족관리', FailureHandling.CONTINUE_ON_FAILURE)
@@ -40,7 +38,7 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족관리
 'STEP - [자녀추가] 버튼 선택'
 Mobile.tap(findTestObject('11_family/btn_child_add'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 자녀추가 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '자녀추가', FailureHandling.CONTINUE_ON_FAILURE)
@@ -80,7 +78,7 @@ Mobile.verifyElementVisible(findTestObject('11_family/txt_birthday', [('text') :
 Mobile.tap(findTestObject('11_family/txt_name', [('text') : GlobalVariable.son]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [정보보기] 버튼 노출되면 선택'
-if(Mobile.waitForElementPresent(findTestObject('11_family/btn_info'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE))
+if(Mobile.waitForElementPresent(findTestObject('11_family/btn_info'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
 {
 	'STEP - [정보보기] 버튼 선택'
 	Mobile.tap(findTestObject('11_family/btn_info'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -95,7 +93,7 @@ Mobile.verifyElementText(findTestObject('11_family/txt_child_ssn'), '230301-3333
 'STEP - [편집] 버튼 선택'
 Mobile.tap(findTestObject('11_family/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 가족 관리 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족 관리', FailureHandling.CONTINUE_ON_FAILURE)
@@ -112,13 +110,13 @@ for(i = 1; i <= 7; i++)
 'STEP - 주소 입력 영역 선택'
 Mobile.tap(findTestObject('11_family/input_adress', [('text') : '주소 입력하기']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 주소 검색하기 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 검색하기', FailureHandling.STOP_ON_FAILURE)
 
 'STEP - 주소 입력'
-Mobile.setText(findTestObject('06_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime)
+Mobile.setText(findTestObject('06_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [검색] 버튼 선택'
 Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -126,10 +124,10 @@ Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable
 'STEP - 도로명 주소 선택'
 Mobile.tap(findTestObject('06_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 상세주소 입력 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.STOP_ON_FAILURE, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 상세주소 입력'
 Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime)
@@ -137,7 +135,7 @@ Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_deta
 'STEP - [등록] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 가족 관리 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족 관리', FailureHandling.STOP_ON_FAILURE)
@@ -149,7 +147,7 @@ Mobile.verifyElementVisible(findTestObject('11_family/input_adress', [('text') :
 Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '[정보보기] 버튼 노출되면 선택'
-if(Mobile.waitForElementPresent(findTestObject('11_family/btn_info'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE))
+if(Mobile.waitForElementPresent(findTestObject('11_family/btn_info'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
 {
 	'STEP - [정보보기] 버튼 선택'
 	Mobile.tap(findTestObject('11_family/btn_info'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -163,6 +161,8 @@ Mobile.verifyElementText(findTestObject('11_family/txt_adress'), '경기 시흥�
 'STEP - [x] 버튼 선택'
 Mobile.tap(findTestObject('11_family/btn_close'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 가족관리 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족관리', FailureHandling.STOP_ON_FAILURE)
 //
@@ -170,10 +170,8 @@ Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족관리
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
-
 '기대결과 - 홈 화면으로 이동된다.'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 앱 종료'
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()

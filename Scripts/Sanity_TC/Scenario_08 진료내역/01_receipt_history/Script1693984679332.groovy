@@ -26,12 +26,10 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-Mobile.delay(2)
-
 'STEP - 진료내역 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_menu_history'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_history'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 진료내역 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)
@@ -39,14 +37,14 @@ Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료
 'STEP - [리뷰 관리] 버튼 선택'
 Mobile.tap(findTestObject('04_receipt_history/btn_review'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 리뷰 관리 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '리뷰 관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 //
 'STEP - 리뷰 존재 유무에 따른 화면 확인'
-if(Mobile.waitForElementPresent(findTestObject('04_receipt_history/area_rvReviewList'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
+if(Mobile.waitForElementPresent(findTestObject('04_receipt_history/area_rvReviewList'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE) == true)
 {
 	'기대결과 - 리뷰 상태 이미지가 노출된다.'
 	Mobile.verifyElementVisible(findTestObject('04_receipt_history/img_ivReviewState'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -64,7 +62,7 @@ else
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 진료내역 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)
@@ -105,7 +103,7 @@ Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, Fa
 'STEP - [네] 버튼 선택'
 Mobile.tap(findTestObject('10_receipt/btn_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 진료내역 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)
@@ -127,15 +125,13 @@ Mobile.tap(findTestObject('00_common/txt_class_text_view', [('text'): '확인'])
 '기대결과 - 진료내역 화면에 본인 이름 목록이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('04_receipt_history/txt_reception_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - {영유아} 이름 목록 미노출'
-Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/txt_reception_name', [('text') : '영유아']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'기대결과 - {영유아} 이름 목록이 노출되지 않는다.'
+Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/txt_reception_name', [('text') : '영유아']), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 //바로접수 동작 확인
 'STEP - [바로접수] 버튼 선택'
 Mobile.tap(findTestObject('04_receipt_history/btn_common_view', [('text') : '바로접수']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.delay(2)
 
 '기대결과 - 접수하기 화면으로 이동된다.'
 Mobile.verifyElementVisible(findTestObject('10_receipt/txt_receipt_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -146,7 +142,7 @@ Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, Fa
 'STEP - [네] 버튼 선택'
 Mobile.tap(findTestObject('10_receipt/btn_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 진료내역 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)
@@ -156,7 +152,7 @@ Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료
 'STEP - 병원 목록 선택'
 Mobile.tap(findTestObject('04_receipt_history/txt_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 진료내역 상세 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
@@ -171,7 +167,7 @@ Mobile.verifyElementText(findTestObject('04_receipt_history/txt_office'), '진�
 'STEP - [<-] 이전 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 진료내역 화면으로 이동된다.'
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_title'), '진료내역', FailureHandling.CONTINUE_ON_FAILURE)

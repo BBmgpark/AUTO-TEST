@@ -26,18 +26,16 @@ import io.appium.java_client.MobileElement
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-Mobile.delay(2)
-
 'STEP - 홈 검색 영역 선택'
-Mobile.tap(findTestObject('03_home/area_view_search_bar'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/area_view_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 'STEP - 가상 키보드 닫기'
 Mobile.pressBack()
 
 '최근 검색어 존재 시 전체 삭제'
-if(Mobile.waitForElementPresent(findTestObject('08_search/btn_all_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE))
+if(Mobile.waitForElementPresent(findTestObject('08_search/btn_all_delete'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
 {
 	Mobile.tap(findTestObject('08_search/btn_all_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -57,10 +55,12 @@ Mobile.tap(findTestObject('08_search/btn_search'), GlobalVariable.fixedTime, Fai
 Mobile.tap(findTestObject('08_search/btn_result_plus'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 병원 검색 결과가 노출된다.'
-Mobile.verifyElementText(findTestObject('08_search/txt_hospital_name'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //병원명
+Mobile.verifyElementText(findTestObject('08_search/txt_hospital_name'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) 
+
+Mobile.delay(3)
 
 '기대결과 - 필터 버튼이 노출된다.'
-Mobile.verifyElementText(findTestObject('08_search/txt_sort_type'), '관련순', FailureHandling.CONTINUE_ON_FAILURE) //sort 타입
+Mobile.verifyElementText(findTestObject('08_search/txt_sort_type'), '관련순', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [진료중] [지도보기] 버튼이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('08_search/btn_filter_open'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[진료중]
@@ -68,8 +68,6 @@ Mobile.verifyElementVisible(findTestObject('08_search/btn_map'), GlobalVariable.
 
 'STEP - 병원 목록 선택'
 Mobile.tap(findTestObject('08_search/txt_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.delay(3)
 
 //'기대결과 - 병원상세로 이동되고, [시간예약] 버튼이 노출된다.'
 //Mobile.verifyElementVisible(findTestObject('09_hospital_detail/btn_right', [('text') : '시간예약']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -80,22 +78,22 @@ Mobile.delay(3)
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_webview_back'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 검색 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('08_search/input_search'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //검색 인풋 문구
+Mobile.verifyElementText(findTestObject('08_search/input_search'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) 
 
 'STEP - [x] 검색어 삭제 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_search_clear'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 검색어 삭제되고 최근 검색어가 노출된다.' 
-Mobile.verifyElementText(findTestObject('08_search/txt_recent_list'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //최근 검색어
+Mobile.verifyElementText(findTestObject('08_search/txt_recent_list'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [x] 최근 검색어 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_recent_list_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 삭제한 최근 검색어가 노출되지 않는다.'
-Mobile.verifyElementNotVisible(findTestObject('08_search/txt_recent_list'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('08_search/txt_recent_list'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 //질병 검색
@@ -137,8 +135,8 @@ Mobile.tap(findTestObject('08_search/btn_search_clear'), GlobalVariable.fixedTim
 'STEP - [x] 최근 검색어 삭제 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_recent_list_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 삭제한 최근 검색어 미노출'
-Mobile.verifyElementNotVisible(findTestObject('08_search/txt_recent_list'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'기대결과 - 삭제한 최근 검색어가 노출되지 않는다.'
+Mobile.verifyElementNotVisible(findTestObject('08_search/txt_recent_list'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 //
 
@@ -159,6 +157,8 @@ Mobile.tap(findTestObject('08_search/btn_search'), GlobalVariable.fixedTime, Fai
 	
 'STEP - 검색 결과 첫번째 검색어 선택'
 Mobile.tap(findTestObject('08_search/btn_result_plus'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 	
 '기대결과 - 진료과 검색 결과 목록 노출'
 Mobile.verifyElementText(findTestObject('08_search/input_search'), medical_department[i], FailureHandling.CONTINUE_ON_FAILURE) //검색 영역
@@ -173,20 +173,16 @@ hospital_name = Mobile.getText(findTestObject('08_search/txt_hospital_name'), Gl
 'STEP - 병원 목록 선택'
 Mobile.tap(findTestObject('08_search/txt_hospital_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 'STEP - 이전 화면으로 이동'
 Mobile.pressBack()
-
-Mobile.delay(2)
 
 '기대결과 - 검색 화면으로 이동된다.'
 Mobile.verifyElementVisible(findTestObject('08_search/input_search'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [지도보기] 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_map'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.delay(2)
 
 '기대결과 - 병원 지도 화면으로 이동된다.'
 Mobile.verifyElementVisible(findTestObject('08_search/area_naver_map'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //네이버 지도
@@ -196,29 +192,27 @@ Mobile.verifyElementVisible(findTestObject('08_search/txt_map_hospital_name', [(
 'STEP - 병원 선택'
 Mobile.tap(findTestObject('08_search/area_hospital_map_list'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 'STEP - 이전 화면으로 이동'
 Mobile.pressBack()
 
-Mobile.delay(2)
-
 '기대결과 - 병원 지도 화면으로 이동된다.'
-Mobile.verifyElementVisible(findTestObject('08_search/area_naver_map'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //네이버 지도
+Mobile.verifyElementVisible(findTestObject('08_search/area_naver_map'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 '기대결과 - 검색 화면으로 이동'
-Mobile.verifyElementText(findTestObject('08_search/input_search'), medical_department[i], FailureHandling.CONTINUE_ON_FAILURE) //검색 영역
+Mobile.verifyElementText(findTestObject('08_search/input_search'), medical_department[i], FailureHandling.CONTINUE_ON_FAILURE)
 	
 'STEP - [x] 검색어 삭제 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_search_clear'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 '기대결과 - 검색어 삭제되고  최근 검색어가 노출된다.'
-Mobile.verifyElementText(findTestObject('08_search/txt_recent_list'), medical_department[i], FailureHandling.CONTINUE_ON_FAILURE) //검색어
+Mobile.verifyElementText(findTestObject('08_search/txt_recent_list'), medical_department[i], FailureHandling.CONTINUE_ON_FAILURE)
 	
 'STEP - [x] 최근 검색어 삭제 버튼 선택'
 Mobile.tap(findTestObject('08_search/btn_recent_list_delete'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -228,15 +222,11 @@ Mobile.verifyElementNotVisible(findTestObject('08_search/txt_recent_list'), Glob
 }
 //
 
-//홈
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2)
-
 '기대결과 - 홈 화면으로 이동된다.'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), 10, FailureHandling.CONTINUE_ON_FAILURE) //홈 메뉴(활성화)
-//
+Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 앱 종료'
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()

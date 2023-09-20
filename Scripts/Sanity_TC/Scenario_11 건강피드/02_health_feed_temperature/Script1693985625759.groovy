@@ -27,10 +27,12 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 마이페이지 메뉴 선택'
-Mobile.tap(findTestObject('03_home/btn_menu_mypage'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 건강피드 선택'
 Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
@@ -49,11 +51,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [체온 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '체온 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 체온관리 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '체온관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 체온 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_temperature'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 체온 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '체온 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -64,11 +70,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '36', GlobalVaria
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 키 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_temperature'), '36°C', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) 
@@ -87,11 +97,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [체온 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '체온 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 체온관리 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '체온관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 체온 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_temperature'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 체온 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '체온 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -102,11 +116,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '38', GlobalVaria
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 체온 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_temperature'), '38°C', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
@@ -125,11 +143,15 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [체온 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '체온 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 체온관리 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '체온관리', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 체온 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_temperature'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 체온 직접 입력 팝업 노출'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '체온 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
@@ -140,11 +162,15 @@ Mobile.setText(findTestObject('13_healthy_feed/input_number'), '39', GlobalVaria
 'STEP - [확인] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/btn_positive'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3)
+
 '기대결과 - 등록한 체온 데이터 노출'
 Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_temperature'), '39°C', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(3)
 
 '기대결과 - 건강피드 화면으로 이동'
 Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
