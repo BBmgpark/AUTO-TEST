@@ -198,7 +198,14 @@ Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), Gl
 Mobile.verifyElementVisible(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 개인화 영역에 [영유아검진 작성] 버튼이 노출된다.'
-Mobile.verifyElementVisible(findTestObject('03_home/btn_tv_button', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+if(Mobile.waitForElementNotPresent(findTestObject('03_home/btn_tv_button'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
+{
+	Mobile.verifyElementVisible(findTestObject('03_home/btn_left', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+}
+else
+{
+	Mobile.verifyElementVisible(findTestObject('03_home/btn_tv_button', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+}
 
 'STEP - 개인화 영역 선택'
 Mobile.tap(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

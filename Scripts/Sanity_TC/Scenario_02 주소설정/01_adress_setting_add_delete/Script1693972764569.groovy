@@ -30,12 +30,11 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 //주소설정 화면 진입		
-'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 홈 주소이름 [v] 버튼 선택'
+Mobile.tap(findTestObject('03_home/btn_iv_arrow'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 우리집 주소 설정된 화면으로 이동'
-Mobile.verifyElementVisible(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[뒤로가기]
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
+'기대결과 - 주소 설정 화면으로 이동된다.'
+Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE) 
 //
 
 //주소 등록
@@ -94,7 +93,7 @@ Mobile.verifyElementVisible(findTestObject('06_adress_setting/txt_different_adre
 Mobile.tap(findTestObject('06_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('03_home/btn_iv_arrow'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(3)
 

@@ -28,9 +28,11 @@ import io.appium.java_client.MobileElement
 Mobile.startExistingApplication(GlobalVariable.appid)
 //
 
+Mobile.delay(5)
+
 //주소 편집
-'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 홈 주소이름 [v] 버튼 선택'
+Mobile.tap(findTestObject('03_home/btn_iv_arrow'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(3)
 
@@ -166,8 +168,8 @@ Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, Fa
 'STEP - [홈] 메뉴 선택'
 Mobile.tap(findTestObject('03_home/btn_menu_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('03_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 홈 주소이름 [v] 버튼 선택'
+Mobile.tap(findTestObject('03_home/btn_iv_arrow'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(3)
 
