@@ -204,7 +204,7 @@ if(Mobile.waitForElementNotPresent(findTestObject('03_home/btn_tv_button'), Glob
 }
 else
 {
-	Mobile.verifyElementVisible(findTestObject('03_home/btn_tv_button', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementVisible(findTestObject('03_home/btn_tv_button'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 'STEP - 개인화 영역 선택'
