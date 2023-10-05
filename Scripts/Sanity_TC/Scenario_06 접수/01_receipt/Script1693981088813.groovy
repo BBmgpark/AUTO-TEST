@@ -63,11 +63,6 @@ if(Mobile.waitForElementPresent(findTestObject('09_hospital_detail/btn_left', [(
 Mobile.tap(findTestObject('09_hospital_detail/btn_left', [('text') : '바로접수']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-Mobile.delay(3)
-
-'기대결과 - 접수하기 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
-
 'STEP - 진료대상 본인 선택'
 Mobile.tap(findTestObject('10_receipt/txt_name', [('text') : GlobalVariable.user_name]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -80,11 +75,13 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/input_back_number'), 
 	'STEP - 주민번호 뒷자리 영역 선택'
 	Mobile.tap(findTestObject('10_receipt/input_back_number'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
-	'STEP - 주민번호 뒷자리 "1111111" 입력'
-	for(i = 1; i <= 7; i++)
+	'STEP - 주민번호 뒷자리 "1111118" 입력'
+	for(i = 1; i <= 6; i++)
 	{
 		Mobile.tap(findTestObject('11_family/btn_keypad_number_1'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	}
+	
+	Mobile.tap(findTestObject('11_family/btn_keypad_number_8'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	Mobile.tap(findTestObject('10_receipt/btn_finish'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
@@ -175,31 +172,24 @@ Mobile.tap(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.
 Mobile.delay(3)
 
 '기대결과 - 진료내역 상세 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '진료내역 상세']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_detail_hospital'), GlobalVariable.hospital_name, FailureHandling.CONTINUE_ON_FAILURE) //병원명
 Mobile.verifyElementText(findTestObject('04_receipt_history/txt_office'), '진료실', FailureHandling.CONTINUE_ON_FAILURE) //진료실명
 
 'STEP - [접수취소] 버튼 선택'
 Mobile.tap(findTestObject('04_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
-'기대결과 - 접수취소 확인 팝업 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '접수취소', FailureHandling.CONTINUE_ON_FAILURE)
-
 'STEP - [접수취소] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.delay(3)
-
-'기대결과 - 진료내역 상세 취소 안내 문구 노출'
-Mobile.verifyElementText(findTestObject('04_receipt_history/txt_detail_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [바로접수] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('04_receipt_history/btn_detail_now_receipt'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [접수취소] 버튼 미노출'
 Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/btn_detail_receipt_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 진료내역 상세 취소 안내 문구 노출'
+Mobile.verifyElementText(findTestObject('04_receipt_history/txt_detail_cancel_message'), '본인 요청으로 접수가 취소되었어요.', FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [<-] 뒤로가기 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

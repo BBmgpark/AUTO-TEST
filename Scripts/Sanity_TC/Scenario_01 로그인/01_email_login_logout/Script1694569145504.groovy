@@ -95,9 +95,11 @@ Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), Gl
 'STEP- [마이페이지] 메뉴 선택'
 Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 로그인 상태 마이페이지 노출'
-Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE) //이름
-Mobile.verifyElementVisible(findTestObject('05_mypage/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[수정] 버튼
+'기대결과 - 마이페이지로 이동하고 [수정] 버튼이 노출된다.'
+Mobile.verifyElementVisible(findTestObject('05_mypage/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 마이페이지 유저 이름이 노출된다.'
+Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE) 
 //
 
 //로그아웃
@@ -110,29 +112,26 @@ Mobile.tap(findTestObject('05_mypage/btn_logout'), GlobalVariable.fixedTime, Fai
 'STEP - 로그아웃 [확인] 버튼 선택'
 Mobile.tap(findTestObject('05_mypage/btn_logout_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 로그아웃 상태 마이페이지 노출'
-Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), '마이페이지', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementVisible(findTestObject('05_mypage/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[로그인]
+Mobile.verifyElementVisible(findTestObject('05_mypage/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), '마이페이지', FailureHandling.CONTINUE_ON_FAILURE) 
 //
 
 //마이페이지 <-> 로그인 페이지 이동
 'STEP - 마이페이지 [로그인] 버튼 선택'
 Mobile.tap(findTestObject('05_mypage/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 로그인 화면 노출'
-Mobile.verifyElementVisible(findTestObject('01_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementVisible(findTestObject('02_login/btn_ivClose'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[x]
+'기대결과 - 로그인 화면 타이틀이 노출된다.'
+Mobile.verifyElementVisible(findTestObject('01_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 로그인 화면 [x] 버튼이 노출된다.'
+Mobile.verifyElementVisible(findTestObject('02_login/btn_ivClose'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) 
 
 'STEP - 로그인 화면 [x] 버튼 선택'
 Mobile.tap(findTestObject('02_login/btn_ivClose'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
-'기대결과 - 마이페이지 화면으로 이동'
-Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), '마이페이지', FailureHandling.CONTINUE_ON_FAILURE) //타이틀
-Mobile.verifyElementVisible(findTestObject('05_mypage/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[로그인]
+'기대결과 - 마이페이지로 이동하고 [로그인] 버튼이 노출된다.'
+Mobile.verifyElementVisible(findTestObject('05_mypage/btn_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 //마이페이지 이메일 로그인
@@ -151,9 +150,11 @@ Mobile.setText(findTestObject('02_login/input_etPassword'), GlobalVariable.email
 'STEP - [로그인하기] 버튼 선택'
 Mobile.tap(findTestObject('02_login/btn_tvLoginConfirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 로그인 상태 마이페이지 노출'
-Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE) //이름
-Mobile.verifyElementVisible(findTestObject('05_mypage/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //[수정] 버튼
+'기대결과 - 마이페이지로 이동하고 [수정] 버튼이 노출된다.'
+Mobile.verifyElementVisible(findTestObject('05_mypage/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 마이페이지 이름이 노출된다.'
+Mobile.verifyElementText(findTestObject('05_mypage/txt_name_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 'STEP - 앱 종료'

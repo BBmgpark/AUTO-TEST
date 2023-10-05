@@ -33,10 +33,8 @@ Mobile.tap(findTestObject('03_home/btn_menu_mypage'), GlobalVariable.fixedTime, 
 'STEP - 건강피드 선택'
 Mobile.tap(findTestObject('05_mypage/btn_healthy_feed'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 건강피드 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '건강피드']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 자녀 필터 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_child_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -52,18 +50,14 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [키 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '키 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '성장관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 키 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 키 직접 입력 팝업 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '키 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '키 직접 입력']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 키 입력'
 Mobile.setText(findTestObject('13_healthy_feed/input_number'), '50', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -79,10 +73,8 @@ Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '50cm', F
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 tab 화면 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '건강피드']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_left_switch'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //키 스위치 상태
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_right'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //몸무게 
 
@@ -97,18 +89,14 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [키 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '키 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '성장관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 키 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 키 직접 입력 팝업 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '키 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '키 직접 입력']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 키 입력'
 Mobile.setText(findTestObject('13_healthy_feed/input_number'), '60', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -124,12 +112,11 @@ Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '60cm', F
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 건강피드 화면 성장관리 tab 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
-Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_left_switch'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //키 스위치 상태
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_right'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //몸무게
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '건강피드']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_left_switch'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //키 스위치 상태
+
 
 '기대결과 - 등록한 키 데이터 노출'
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/txt_height_weight', [('text') : '60cm']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //60cm 문구 포함
@@ -145,18 +132,14 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [몸무게 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '몸무게 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 화면 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '성장관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 몸무게 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 몸무게 직접 입력 팝업 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '몸무게 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '몸무게 직접 입력']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 몸무게 입력'
 Mobile.setText(findTestObject('13_healthy_feed/input_number'), '5', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -172,11 +155,9 @@ Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '5kg', Fa
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 tab에 등록한 몸무게 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
-Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_left'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //키 
+Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_left'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //키
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '건강피드']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_right_switch'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //몸무게 스위치 상태
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/txt_height_weight', [('text') : '5kg']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //50cm 문구 포함
 //
@@ -188,18 +169,14 @@ Mobile.tap(findTestObject('13_healthy_feed/btn_add'), GlobalVariable.fixedTime, 
 'STEP - [몸무게 등록] 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_add', [('text') : '몸무게 등록']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 화면 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '성장관리', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '성장관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 몸무게 입력 영역 선택'
 Mobile.tap(findTestObject('13_healthy_feed/txt_growth'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 몸무게 직접 입력 팝업 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '몸무게 직접 입력', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '몸무게 직접 입력']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 몸무게 입력'
 Mobile.setText(findTestObject('13_healthy_feed/input_number'), '10', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -215,11 +192,9 @@ Mobile.verifyElementText(findTestObject('13_healthy_feed/txt_growth'), '10kg', F
 'STEP - [등록 완료] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_confirmBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 성장관리 tab에 등록한 몸무게 노출'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '건강피드', FailureHandling.CONTINUE_ON_FAILURE) //page title
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_left'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //키
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '건강피드']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/btn_right_switch'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //몸무게 스위치 상태
 Mobile.verifyElementVisible(findTestObject('13_healthy_feed/txt_height_weight', [('text') : '10kg']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //50cm 문구 포함
 //
@@ -227,6 +202,7 @@ Mobile.verifyElementVisible(findTestObject('13_healthy_feed/txt_height_weight', 
 //홈 화면 이동
 'STEP - [<-] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_backBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
 
 'STEP - 앱 종료'
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()

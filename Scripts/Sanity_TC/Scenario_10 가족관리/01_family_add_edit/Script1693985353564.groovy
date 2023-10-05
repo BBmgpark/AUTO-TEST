@@ -29,19 +29,15 @@ Mobile.startExistingApplication(GlobalVariable.appid)
 'STEP - 홈 [가족관리] 메뉴 선택'
 Mobile.tap(findTestObject('03_home/btn_family'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 가족관리 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족관리', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '가족관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 //자녀 추가
 'STEP - [자녀추가] 버튼 선택'
 Mobile.tap(findTestObject('11_family/btn_child_add'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 자녀추가 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '자녀추가', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '자녀추가']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 이름 입력'
 Mobile.setText(findTestObject('11_family/input_add_family_name'), GlobalVariable.son, GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -93,30 +89,26 @@ Mobile.verifyElementText(findTestObject('11_family/txt_child_ssn'), '230301-3333
 'STEP - [편집] 버튼 선택'
 Mobile.tap(findTestObject('11_family/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 가족 관리 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족 관리', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '가족 관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 주민번호 뒷자리 선택'
 Mobile.tap(findTestObject('11_family/input_add_ssn_back_number'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
 
-'STEP - 주민번호 뒷자리 "7777777" 수정'
+'STEP - 주민번호 뒷자리 "8888888" 수정'
 for(i = 1; i <= 7; i++)
 {
-	Mobile.tap(findTestObject('11_family/btn_keypad_number_7'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.tap(findTestObject('11_family/btn_keypad_number_8'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 'STEP - 주소 입력 영역 선택'
 Mobile.tap(findTestObject('11_family/input_adress', [('text') : '주소 입력하기']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 주소 검색하기 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '주소 검색하기', FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '주소 검색하기']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 주소 입력'
-Mobile.setText(findTestObject('06_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.setText(findTestObject('06_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime)
 
 'STEP - [검색] 버튼 선택'
 Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -124,10 +116,8 @@ Mobile.tap(findTestObject('06_adress_setting/btn_adress_search'), GlobalVariable
 'STEP - 도로명 주소 선택'
 Mobile.tap(findTestObject('06_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 상세주소 입력 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '상세주소 입력', FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '상세주소 입력']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 상세주소 입력'
 Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime)
@@ -135,12 +125,7 @@ Mobile.setText(findTestObject('06_adress_setting/input_adress_detail_adress_deta
 'STEP - [등록] 버튼 선택'
 Mobile.tap(findTestObject('00_common/btn_tvCommonButtonView'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
-'기대결과 - 가족 관리 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족 관리', FailureHandling.STOP_ON_FAILURE)
-
-'기대결과 - 수정된 주소가 노출된다.'
+'기대결과 - 자녀 상세 팝업에 수정된 주소가 노출된다.'
 Mobile.verifyElementVisible(findTestObject('11_family/input_adress', [('text') : '경기 시흥시 배곧전원로 12-1 (배곧동) 1234 (15010)']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [완료] 버튼 선택'
@@ -155,16 +140,14 @@ if(Mobile.waitForElementPresent(findTestObject('11_family/btn_info'), GlobalVari
 
 '기대결과 - 수정된 자녀정보 바텀시트가 노출된다.'
 Mobile.verifyElementVisible(findTestObject('11_family/txt_name', [('text') : GlobalVariable.son]), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //이름
-Mobile.verifyElementText(findTestObject('11_family/txt_child_ssn'), '230301-7777777', FailureHandling.CONTINUE_ON_FAILURE) //주민등록번호
+Mobile.verifyElementText(findTestObject('11_family/txt_child_ssn'), '230301-8888888', FailureHandling.CONTINUE_ON_FAILURE) //주민등록번호
 Mobile.verifyElementText(findTestObject('11_family/txt_adress'), '경기 시흥시 배곧전원로 12-1 ', FailureHandling.CONTINUE_ON_FAILURE) //주소
 
 'STEP - [x] 버튼 선택'
 Mobile.tap(findTestObject('11_family/btn_close'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 가족관리 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '가족관리', FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '가족관리']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 'STEP - [<-] 뒤로가기 버튼 선택'

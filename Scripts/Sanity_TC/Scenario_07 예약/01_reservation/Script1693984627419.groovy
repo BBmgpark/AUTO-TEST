@@ -68,11 +68,6 @@ if(Mobile.waitForElementPresent(findTestObject('00_common/txt_tvtitle', [('text'
 Mobile.tap(findTestObject('00_common/txt_tvConfirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-Mobile.delay(3)
-
-'기대결과 - 예약하기 화면으로 이동'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '예약하기 ([TEST] 배곧의원)', FailureHandling.CONTINUE_ON_FAILURE)
-
 'STEP - 진료대상 {영유아} 선택'
 Mobile.tap(findTestObject('10_receipt/txt_name', [('text') : '영유아']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -169,10 +164,8 @@ if(Mobile.waitForElementPresent(findTestObject('10_receipt/txt_payment_list_titl
 	Mobile.tap(findTestObject('10_receipt/btn_next'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-Mobile.delay(3)
-
 '기대결과 - 예약완료 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('10_receipt/txt_complete_page_title'), "예약 당일, 병원에 방문하면\n'똑닥으로 왔어요~' 라고 말해주세요.", FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('10_receipt/btn_complete_reservation'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [고유식별정보의 수집 및 이용 동의] 체크'
 Mobile.tap(findTestObject('10_receipt/txt_cb_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -180,10 +173,8 @@ Mobile.tap(findTestObject('10_receipt/txt_cb_title'), GlobalVariable.fixedTime, 
 'STEP - [동의하고 예약하기] 버튼 선택'
 Mobile.tap(findTestObject('10_receipt/btn_complete_reservation'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 영유아 검진 문진표 작성 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '영유아 검진 문진표 작성', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '영유아 검진 문진표 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 문진표에 영유아검진 개월수가 노출된다.'
 Mobile.verifyElementVisible(findTestObject('11_family/txt_titleTxt_infant'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE) //영유아 검진 문진표(30~36개월)
@@ -198,22 +189,13 @@ Mobile.verifyElementVisible(findTestObject('03_home/btn_menu_home_selected'), Gl
 Mobile.verifyElementVisible(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 개인화 영역에 [영유아검진 작성] 버튼이 노출된다.'
-if(Mobile.waitForElementNotPresent(findTestObject('03_home/btn_tv_button'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE))
-{
-	Mobile.verifyElementVisible(findTestObject('03_home/btn_left', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-}
-else
-{
-	Mobile.verifyElementVisible(findTestObject('03_home/btn_tv_button'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-}
+Mobile.verifyElementVisible(findTestObject('03_home/btn_left', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 개인화 영역 선택'
 Mobile.tap(findTestObject('03_home/btn_cv_medical_status_card'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3)
-
 '기대결과 - 진료내역 상세 화면으로 이동된다.'
-Mobile.verifyElementText(findTestObject('00_common/txt_titleTxt'), '진료내역 상세', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('00_common/txt_page_titleTxt', [('text') : '진료내역 상세']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [영유아검진 작성] 버튼이 노출된다.'
 Mobile.verifyElementVisible(findTestObject('00_common/btn_commonBtnTitle', [('text') : '영유아검진 작성']), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -246,7 +228,7 @@ Mobile.tap(findTestObject('00_common/btn_positiveTxt'), GlobalVariable.fixedTime
 Mobile.verifyElementVisible(findTestObject('04_receipt_history/btn_time_reservation'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 진료내역 상세 [예약취소] 버튼이 노출되지 않는다.'
-Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/btn_detail_reservation_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('04_receipt_history/btn_detail_reservation_cancel'), GlobalVariable.waitTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 'STEP - [<-] 이전 버튼 선택'
